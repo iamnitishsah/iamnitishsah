@@ -16,7 +16,7 @@ export const projects = [
             "AI doctor assistant platform generating diagnosis and prescriptions using LLM pipelines.",
         tech: ["Django", "LangChain", "Gemini", "PostgreSQL"],
         github: "https://github.com/iamnitishsah/medimind",
-        live: "#",
+        live: "https://medimindai.vercel.app/",
         image: "/projects/medimind.png",
     },
     {
