@@ -5,7 +5,7 @@ export default function Footer() {
                 {/* BRAND */}
                 <div>
                     <h2 className="text-xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                        Nitish.dev
+                        nitishadow
                     </h2>
                     <p className="text-slate-400 mt-4 text-sm leading-relaxed">
                         Backend Engineer focused on scalable APIs, distributed systems, and AI-powered platforms.
