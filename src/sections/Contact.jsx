@@ -151,16 +151,6 @@ export default function Contact() {
                         {/* Quick Action Buttons */}
                         <div className="flex flex-wrap justify-center gap-4 pt-4">
                             <a
-                                href="/resume.pdf"
-                                download
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold rounded-lg shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all duration-300"
-                            >
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                </svg>
-                                Download Resume
-                            </a>
-                            <a
                                 href={generateInterviewLink(contact.email)}
                                 className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-emerald-500/50 text-white font-semibold rounded-lg transition-all duration-300"
                             >
@@ -177,7 +167,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
                     <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-5 text-center">
                         <div className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent mb-1">24h</div>
-                        <div className="text-sm text-slate-400 font-medium">Response Time</div>
+                        <div className="text-sm text-slate-400 font-medium">Replies within</div>
                     </div>
                     <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-5 text-center">
                         <div className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent mb-1">100%</div>
