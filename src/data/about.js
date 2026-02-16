@@ -3,7 +3,7 @@ export const about = {
 
 My work revolves around designing secure backend architectures, integrating machine learning pipelines with LangChain and LangGraph, and deploying production-grade systems that handle real-world challenges.
 
-I specialize in FastAPI and Django REST Framework, working with PostgreSQL (including pgvector for vector operations), Redis for caching, and implementing comprehensive authentication systems with JWT and RBAC.
+I specialize in FastAPI and Django REST Framework, working with MongoDB  and PostgreSQL (including pgvector for vector operations), Redis for caching, and implementing comprehensive authentication systems with JWT and RBAC.
 
 I enjoy solving complex engineering problems involving system design, microservices architecture, performance optimization, and data workflows. My goal is to build systems that are not just functional, but scalable, secure, and maintainable.`,
 

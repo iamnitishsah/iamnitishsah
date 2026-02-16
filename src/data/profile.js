@@ -15,6 +15,6 @@ export const profile = {
         mail: "mailto:iamnitishsah12@gmail.com",
         leetcode: "https://leetcode.com/iamnitishsah",
         codechef: "https://www.codechef.com/users/iamnitishsah",
-        codeforces: "https://codeforces.com/profile/iamnitishsah"
+        codeforces: "https://codeforces.com/profile/nitiSHadow"
     },
 };

@@ -1,31 +1,25 @@
 export const skills = [
     {
         category: "Languages",
-        items: ["Python", "C++", "JavaScript", "TypeScript", "SQL", "Bash"]
+        items: ["Python", "C++", "JavaScript", "SQL"]
     },
     {
         category: "Backend",
         items: [
             "FastAPI",
             "Django REST Framework",
-            "Flask",
-            "Node.js",
-            "Express.js",
             "REST APIs",
             "Microservices",
-            "GraphQL"
         ]
     },
     {
         category: "Databases",
         items: [
-            "PostgreSQL",
             "MongoDB",
+            "PostgreSQL(pgvector)",
             "MySQL",
-            "Redis",
             "Pinecone",
-            "pgvector",
-            "SQLAlchemy"
+            "Redis"
         ]
     },
     {
@@ -34,10 +28,7 @@ export const skills = [
             "LangChain",
             "LangGraph",
             "Google Gemini",
-            "OpenAI API",
             "PyTorch",
-            "TensorFlow",
-            "scikit-learn",
             "RAG Pipelines",
             "Vector Databases"
         ]
@@ -49,9 +40,6 @@ export const skills = [
             "AWS (EC2, RDS, S3)",
             "Git & GitHub",
             "CI/CD",
-            "Linux",
-            "Nginx",
-            "Gunicorn",
             "Uvicorn"
         ]
     },
@@ -70,9 +58,7 @@ export const skills = [
         items: [
             "Pydantic",
             "JWT",
-            "OAuth 2.0",
             "Celery",
-            "RabbitMQ",
             "Postman",
             "VS Code",
             "PyCharm",

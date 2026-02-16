@@ -32,7 +32,7 @@ export default function About() {
                         {/* Stats/Quick Facts */}
                         <div className="grid grid-cols-3 gap-4 pt-8">
                             <div className="text-center p-4 bg-slate-900/50 border border-white/5 rounded-xl backdrop-blur-sm">
-                                <div className="text-3xl font-bold text-blue-400">25+</div>
+                                <div className="text-3xl font-bold text-blue-400">50+</div>
                                 <div className="text-sm text-slate-400 mt-1">API Endpoints</div>
                             </div>
                             <div className="text-center p-4 bg-slate-900/50 border border-white/5 rounded-xl backdrop-blur-sm">
