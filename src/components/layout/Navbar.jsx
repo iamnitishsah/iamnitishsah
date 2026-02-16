@@ -20,7 +20,7 @@ export default function Navbar() {
                     href="#home"
                     className="text-xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent"
                 >
-                    nitishadow
+                    @nitishad0w
                 </a>
 
                 {/* DESKTOP LINKS */}
