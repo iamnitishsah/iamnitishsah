@@ -236,7 +236,7 @@ export default function Hero() {
                         <div className="absolute -inset-2 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
 
                         {/* Image container */}
-                        <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden border-2 border-emerald-500/20 shadow-2xl transform group-hover:scale-[1.02] transition-transform duration-300">
+                        <div className="relative w-80 h-80 md:w-[33rem] md:h-[33rem] rounded-2xl overflow-hidden border-2 border-emerald-500/20 shadow-2xl transform group-hover:scale-[1.02] transition-transform duration-300">
                             <img
                                 src={profileImg}
                                 alt="Nitish Kumar Sah - Backend Engineer"
