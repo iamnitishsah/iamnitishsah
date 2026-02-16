@@ -1,7 +1,7 @@
 export const skills = [
     {
         category: "Languages",
-        items: ["Python", "C++", "JavaScript", "SQL"],
+        items: ["Python", "C++", "JavaScript", "TypeScript", "SQL", "Bash"]
     },
     {
         category: "Backend",
@@ -9,9 +9,12 @@ export const skills = [
             "FastAPI",
             "Django REST Framework",
             "Flask",
+            "Node.js",
+            "Express.js",
             "REST APIs",
             "Microservices",
-        ],
+            "GraphQL"
+        ]
     },
     {
         category: "Databases",
@@ -20,27 +23,60 @@ export const skills = [
             "MongoDB",
             "MySQL",
             "Redis",
-            "Vector Databases",
-        ],
+            "Pinecone",
+            "pgvector",
+            "SQLAlchemy"
+        ]
     },
     {
         category: "AI / ML",
         items: [
             "LangChain",
             "LangGraph",
+            "Google Gemini",
+            "OpenAI API",
             "PyTorch",
-            "LLM Integrations",
-            "NLP Pipelines",
-        ],
+            "TensorFlow",
+            "scikit-learn",
+            "RAG Pipelines",
+            "Vector Databases"
+        ]
     },
     {
-        category: "DevOps & Tools",
+        category: "DevOps & Cloud",
         items: [
             "Docker",
-            "AWS",
-            "Git",
+            "AWS (EC2, RDS, S3)",
+            "Git & GitHub",
             "CI/CD",
             "Linux",
-        ],
+            "Nginx",
+            "Gunicorn",
+            "Uvicorn"
+        ]
     },
+    {
+        category: "Frontend",
+        items: [
+            "React.js",
+            "Next.js",
+            "Tailwind CSS",
+            "HTML/CSS",
+            "Vite"
+        ]
+    },
+    {
+        category: "Tools & Others",
+        items: [
+            "Pydantic",
+            "JWT",
+            "OAuth 2.0",
+            "Celery",
+            "RabbitMQ",
+            "Postman",
+            "VS Code",
+            "PyCharm",
+            "Cloudinary"
+        ]
+    }
 ];

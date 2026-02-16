@@ -5,24 +5,12 @@ export const experiences = [
         company: "Saptang Labs — Computer & Network Security",
         duration: "Dec 2025 – Present · Remote",
         description: [
-            "Developed secure backend REST APIs using FastAPI.",
-            "Implemented RBAC authentication and authorization systems.",
-            "Designed modular microservice-based backend architecture.",
-            "Worked on distributed data handling and secure logging pipelines.",
+            "Architected and developed 25+ production-grade REST API endpoints using FastAPI with comprehensive role-based access control (RBAC) and JWT authentication workflows for user and client management.",
+            "Engineered enterprise-grade activity logging and audit pipeline systems capturing 100% of critical user actions, enabling compliance-ready monitoring and forensic traceability for security operations.",
+            "Implemented advanced pagination strategies and query optimization techniques using SQLAlchemy ORM, reducing average API response time by 30-40% and improving database efficiency for high-volume concurrent requests.",
+            "Designed and implemented secure authentication flows with password hashing (bcrypt), token refresh mechanisms, and session management for enterprise-grade security."
         ],
-        tech: ["FastAPI", "PostgreSQL", "Docker", "JWT", "RBAC"],
-    },
-
-    {
-        id: 2,
-        role: "Backend Project Engineer",
-        company: "Personal & Hackathon Projects",
-        duration: "2024 – Present",
-        description: [
-            "Built AI-integrated backend platforms and SaaS systems.",
-            "Designed scalable API systems with authentication layers.",
-            "Integrated LLM pipelines and vector databases.",
-        ],
-        tech: ["Django", "LangChain", "PostgreSQL", "Redis"],
-    },
+        tech: ["FastAPI", "PostgreSQL", "Docker", "JWT", "RBAC", "SQLAlchemy", "Pydantic", "Redis"],
+        linkedinPost: "https://www.linkedin.com/posts/iamnitishsah_" // Add actual LinkedIn post URL
+    }
 ];
