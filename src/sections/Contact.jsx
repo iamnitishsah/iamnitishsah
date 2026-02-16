@@ -184,15 +184,9 @@ export default function Contact() {
                         <div className="text-sm text-slate-400 font-medium">Commitment</div>
                     </div>
                     <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-5 text-center">
-                        <div className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent mb-1">Remote</div>
-                        <div className="text-sm text-slate-400 font-medium">Work Ready</div>
+                        <div className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent mb-1">Hybrid</div>
+                        <div className="text-sm text-slate-400 font-medium">Work Flexibility</div>
                     </div>
-                </div>
-
-                {/* Footer */}
-                <div className="text-center pt-8 border-t border-slate-800">
-                    <p className="text-slate-400 font-medium mb-2">Designed & Built by Nitish Kumar Sah</p>
-                    <p className="text-slate-500 text-sm">© 2025 All rights reserved</p>
                 </div>
             </div>
         </section>
