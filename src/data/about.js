@@ -1,28 +1,32 @@
 export const about = {
-    description: `I'm a Backend-focused Software Engineer currently in my 6th semester pursuing B.Tech in Biotechnology at NIT Rourkela, building scalable APIs, distributed systems, and AI-powered platforms.
+    description: `I'm a backend-focused software engineer in my 6th semester of B.Tech Biotechnology at NIT Rourkela. I design scalable APIs, distributed systems, and AI-enabled platforms with a strong focus on reliability, performance, and clean architecture.
 
-My work revolves around designing secure backend architectures, integrating machine learning pipelines with LangChain and LangGraph, and deploying production-grade systems that handle real-world challenges.
-
-I specialize in FastAPI and Django REST Framework, working with MongoDB  and PostgreSQL (including pgvector for vector operations), Redis for caching, and implementing comprehensive authentication systems with JWT and RBAC.
-
-I enjoy solving complex engineering problems involving system design, microservices architecture, performance optimization, and data workflows. My goal is to build systems that are not just functional, but scalable, secure, and maintainable.`,
-
+I work across FastAPI and Django REST Framework, PostgreSQL (including pgvector), MongoDB, Redis, and production-ready deployments. My interests span system design, microservices, and data workflows that deliver real-world impact.`,
+    stats: [
+        { value: "50+", label: "API endpoints" },
+        { value: "2+", label: "Hackathon wins" },
+        { value: "10+", label: "Projects shipped" },
+    ],
     highlights: [
         {
             title: "Backend Engineering",
-            description: "Expert in designing RESTful APIs with FastAPI & Django, implementing RBAC authentication, building microservices, and optimizing database queries for high-performance systems."
-        },
-        {
-            title: "AI/ML Integration",
-            description: "Building LLM-powered platforms with LangChain, LangGraph, and vector databases. Experience with Google Gemini, RAG pipelines, and agent-based architectures for intelligent systems."
-        },
-        {
-            title: "Cloud & DevOps",
-            description: "Deploying containerized applications with Docker, managing AWS infrastructure (EC2, RDS), implementing CI/CD pipelines, and ensuring production-ready deployments."
+            description:
+                "Designing RESTful APIs with FastAPI and Django, implementing secure auth (JWT/RBAC), and optimizing database performance.",
         },
         {
             title: "System Architecture",
-            description: "Architecting distributed systems with focus on scalability, security, and maintainability. Experience with event-driven architectures, caching strategies, and database design."
-        }
-    ]
+            description:
+                "Architecting scalable systems with caching, event-driven patterns, and robust data models.",
+        },
+        {
+            title: "Cloud & DevOps",
+            description:
+                "Containerizing and deploying services with Docker, CI/CD, and cloud infrastructure on AWS.",
+        },
+        {
+            title: "AI/ML Integration",
+            description:
+                "Building LLM-powered systems using LangChain and LangGraph, with RAG pipelines and vector databases.",
+        },
+    ],
 };

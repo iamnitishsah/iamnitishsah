@@ -3,10 +3,9 @@ export const projects = [
         id: 1,
         title: "CampusSentinel",
         description: "AI-powered campus surveillance system featuring real-time threat detection, multi-source event correlation, and intelligent agent orchestration. Built microservice architecture with 12+ indexed PostgreSQL tables and comprehensive REST API infrastructure.",
-        tech: ["Django REST", "FastAPI", "PostgreSQL", "pgvector", "LangGraph", "JWT", "Redis"],
+        tech: ["Django REST", "FastAPI", "PostgreSQL", "pgvector", "LangGraph", "JWT"],
         github: "https://github.com/iamnitishsah/campussentinel",
-        live: "#",
-        image: "/projects/campus.png",
+        demo: "https://youtu.be/egYNxHbyYaM",
         achievement: "Runners-Up, IIT Guwahati"
     },
     {
@@ -16,16 +15,14 @@ export const projects = [
         tech: ["Django REST", "FastAPI", "LangChain", "Google Gemini 2.5", "PostgreSQL", "Pydantic"],
         github: "https://github.com/iamnitishsah/medimind",
         live: "https://medimindai.vercel.app/",
-        image: "/projects/medimind.png"
     },
     {
         id: 3,
         title: "MetaFin",
         description: "AI-powered investment platform with jargon-free UI featuring custom ML models for stock predictions, hybrid recommendation system, real-time sentiment analysis from Reddit and Yahoo Finance, candlestick charts, and personalized news curation with optimal buy/sell window predictions.",
-        tech: ["Next.js", "Django", "PostgreSQL", "Machine Learning", "NLP", "TailwindCSS", "Yahoo Finance API", "Reddit API"],
+        tech: ["Next.js", "Django REST", "PostgreSQL", "Machine Learning", "TailwindCSS", "Yahoo Finance API", "Reddit API"],
         github: "https://github.com/iamnitishsah/MetaFin",
         live: "#",
-        image: "/projects/metafin.png",
         achievement: "2nd Runners-Up, IIT-ISM"
     },
     {
