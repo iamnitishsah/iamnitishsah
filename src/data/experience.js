@@ -11,6 +11,6 @@ export const experiences = [
             "Designed and implemented secure authentication flows with password hashing (bcrypt), token refresh mechanisms, and session management for enterprise-grade security."
         ],
         tech: ["FastAPI", "PostgreSQL", "Docker", "JWT", "RBAC", "SQLAlchemy", "Pydantic", "Redis"],
-        linkedinPost: "https://www.linkedin.com/posts/iamnitishsah_" // Add actual LinkedIn post URL
+        linkedinPost: "https://www.linkedin.com/posts/iamnitishsah_im-happy-to-share-that-im-starting-a-new-activity-7404507039772663808-TBc0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADuppNkBllSy2t_ARL0tsMi9lkDWVTJnKpE"
     }
 ];
