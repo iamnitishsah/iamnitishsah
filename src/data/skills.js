@@ -44,16 +44,6 @@ export const skills = [
         ]
     },
     {
-        category: "Frontend",
-        items: [
-            "React.js",
-            "Next.js",
-            "Tailwind CSS",
-            "HTML/CSS",
-            "Vite"
-        ]
-    },
-    {
         category: "Tools & Others",
         items: [
             "Pydantic",
@@ -64,5 +54,15 @@ export const skills = [
             "PyCharm",
             "Cloudinary"
         ]
-    }
+    },
+    // {
+    //     category: "Frontend",
+    //     items: [
+    //         "React.js",
+    //         "Next.js",
+    //         "Tailwind CSS",
+    //         "HTML/CSS",
+    //         "Vite"
+    //     ]
+    // }
 ];

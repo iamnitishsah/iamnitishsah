@@ -1,40 +1,24 @@
 export default function Button({ children, href, variant = "primary", className = "", ...props }) {
-    const baseStyles = "inline-flex items-center gap-2 px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105";
+    const baseStyles = "inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300";
 
     const variants = {
-        primary: "bg-blue-500 hover:bg-blue-600 text-white shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50",
-        secondary: "bg-slate-800 hover:bg-slate-700 text-white border border-white/10 hover:border-blue-500/30",
-        ghost: "bg-transparent hover:bg-white/5 text-slate-300 hover:text-white border border-white/10 hover:border-white/20",
+        primary: "bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40",
+        secondary: "bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-emerald-500/50 text-white",
+        ghost: "bg-transparent hover:bg-slate-800/50 border border-slate-700 text-slate-300 hover:text-emerald-400 hover:border-emerald-500/50",
     };
 
-    const styles = `${baseStyles} ${variants[variant]} ${className}`;
+    const classes = `${baseStyles} ${variants[variant]} ${className}`;
 
     if (href) {
-        // External link
-        if (href.startsWith('http') || href.startsWith('mailto')) {
-            return (
-                <a
-                    href={href}
-                    className={styles}
-                    target={href.startsWith('http') ? '_blank' : undefined}
-                    rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    {...props}
-                >
-                    {children}
-                </a>
-            );
-        }
-
-        // Internal anchor or download
         return (
-            <a href={href} className={styles} {...props}>
+            <a href={href} className={classes} {...props}>
                 {children}
             </a>
         );
     }
 
     return (
-        <button className={styles} {...props}>
+        <button className={classes} {...props}>
             {children}
         </button>
     );
