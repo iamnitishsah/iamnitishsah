@@ -8,7 +8,7 @@ export default function Footer() {
                         @nitishad0w
                     </h2>
                     <p className="text-slate-400 mt-4 text-sm leading-relaxed">
-                        Backend Engineer focused on scalable APIs, distributed systems, and AI-powered platforms.
+                        Backend engineer focused on building secure APIs and reliable backend systems, with an emphasis on authentication, async workflows, and real-world system behavior.
                     </p>
                 </div>
 

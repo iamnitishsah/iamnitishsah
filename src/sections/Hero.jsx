@@ -191,7 +191,7 @@ export default function Hero() {
                     </div>
 
                     {/* Professional Links */}
-                    <div className="flex items-center gap-5 pt-2 border-t border-slate-800">
+                    <div className="flex flex-wrap items-center gap-5 pt-2 border-t border-slate-800">
                         <a
                             href={profile.socials.github}
                             target="_blank"
@@ -226,6 +226,28 @@ export default function Hero() {
                             </svg>
                             <span className="text-sm font-medium">Email</span>
                         </a>
+                        {profile.socials.leetcode && (
+                            <a
+                                href={profile.socials.leetcode}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LeetCode profile"
+                                className="group flex items-center gap-2 text-slate-400 hover:text-emerald-400 transition-colors"
+                            >
+                                <span className="text-sm font-medium">LeetCode</span>
+                            </a>
+                        )}
+                        {profile.socials.codeforces && (
+                            <a
+                                href={profile.socials.codeforces}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Codeforces profile"
+                                className="group flex items-center gap-2 text-slate-400 hover:text-emerald-400 transition-colors"
+                            >
+                                <span className="text-sm font-medium">Codeforces</span>
+                            </a>
+                        )}
                     </div>
                 </div>
 

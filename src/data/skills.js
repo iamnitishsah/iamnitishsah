@@ -1,68 +1,44 @@
 export const skills = [
     {
         category: "Languages",
-        items: ["Python", "C++", "JavaScript", "SQL"]
+        items: ["Python", "C++", "JavaScript", "SQL"],
     },
     {
-        category: "Backend",
+        category: "Backend & API Security",
         items: [
-            "FastAPI",
-            "Django REST Framework",
-            "REST APIs",
-            "Microservices",
-        ]
+            "REST API Design",
+            "Authentication (JWT, MFA)",
+            "RBAC",
+            "Input Validation",
+        ],
     },
     {
         category: "Databases",
         items: [
+            "PostgreSQL",
             "MongoDB",
-            "PostgreSQL(pgvector)",
             "MySQL",
-            "Pinecone",
-            "Redis"
-        ]
+            "Redis (Caching, Queues)",
+        ],
     },
     {
-        category: "AI / ML",
+        category: "Frameworks",
         items: [
-            "LangChain",
-            "LangGraph",
-            "Google Gemini",
-            "PyTorch",
-            "RAG Pipelines",
-            "Vector Databases"
-        ]
-    },
-    {
-        category: "DevOps & Cloud",
-        items: [
-            "Docker",
-            "AWS (EC2, RDS, S3)",
-            "Git & GitHub",
-            "CI/CD",
-            "Uvicorn"
-        ]
-    },
-    {
-        category: "Tools & Others",
-        items: [
+            "FastAPI",
+            "Django REST Framework",
             "Pydantic",
-            "JWT",
-            "Celery",
-            "Postman",
-            "VS Code",
-            "PyCharm",
-            "Cloudinary"
-        ]
+            "Motor",
+            "LangChain",
+        ],
     },
-    // {
-    //     category: "Frontend",
-    //     items: [
-    //         "React.js",
-    //         "Next.js",
-    //         "Tailwind CSS",
-    //         "HTML/CSS",
-    //         "Vite"
-    //     ]
-    // }
+    {
+        category: "Systems & DevOps",
+        items: [
+            "Async Processing",
+            "Background Workers",
+            "Docker",
+            "Git",
+            "GitHub",
+        ],
+    },
 ];
