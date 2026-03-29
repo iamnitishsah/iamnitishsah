@@ -7,7 +7,7 @@ I care most about building systems that are easy to maintain, safe to operate, a
     stats: [
         { value: "50+", label: "Secure API endpoints" },
         { value: "2", label: "Major hackathon podiums" },
-        { value: "30-40%", label: "API response improvement" },
+        { value: "OWASP Top 10", label: "Secure API Practices" },
     ],
     education: [
         {
