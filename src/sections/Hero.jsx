@@ -260,7 +260,7 @@ export default function Hero() {
                         {/* Image container */}
                         <div className="relative w-80 h-80 md:w-[33rem] md:h-[33rem] rounded-2xl overflow-hidden border-2 border-emerald-500/20 shadow-2xl transform group-hover:scale-[1.02] transition-transform duration-300">
                             <img
-                                src={profileImg}
+                                src={Official}
                                 alt="Nitish Kumar Sah - Backend Engineer"
                                 className="w-full h-full object-cover"
                             />
