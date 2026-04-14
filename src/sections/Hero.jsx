@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import useTypewriter from "../hooks/useTypewriter";
 import { profile } from "../data/profile";
 import Button from "../components/common/Button";
-import profileImg from "../assets/images/profile.jpg";
+import profileImg from "../assets/images/Official.jpg";
 
 export default function Hero() {
     const typedText = useTypewriter(profile.speciality);
@@ -260,7 +260,7 @@ export default function Hero() {
                         {/* Image container */}
                         <div className="relative w-80 h-80 md:w-[33rem] md:h-[33rem] rounded-2xl overflow-hidden border-2 border-emerald-500/20 shadow-2xl transform group-hover:scale-[1.02] transition-transform duration-300">
                             <img
-                                src={Official}
+                                src={profileImg}
                                 alt="Nitish Kumar Sah - Backend Engineer"
                                 className="w-full h-full object-cover"
                             />
