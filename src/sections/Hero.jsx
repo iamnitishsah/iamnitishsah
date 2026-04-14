@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import useTypewriter from "../hooks/useTypewriter";
 import { profile } from "../data/profile";
 import Button from "../components/common/Button";
-import profileImg from "../assets/images/Official.jpg";
+import profileImg from "../assets/images/Official.jpeg";
 
 export default function Hero() {
     const typedText = useTypewriter(profile.speciality);
