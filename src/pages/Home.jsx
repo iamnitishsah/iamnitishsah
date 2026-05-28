@@ -10,11 +10,11 @@ export default function Home() {
     return (
         <main id="content" className="app-shell relative" tabIndex={-1}>
             <Hero />
+            <About />
             <Experience />
             <FeaturedProjects />
-            <Focus />
+            {/*<Focus />*/}
             <Skills />
-            <About />
             <Contact />
         </main>
     );
