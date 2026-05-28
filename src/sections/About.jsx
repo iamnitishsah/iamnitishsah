@@ -1,22 +1,123 @@
 import { about } from "../data/about";
 import { profile } from "../data/profile";
 import { Divider } from "../components/ui";
-import { Panel, Pill, SectionBand, SignalRow } from "./sectionShared";
+import { Panel, SectionBand, SignalRow } from "./sectionShared";
 
 export function About() {
     const aboutParagraphs = about.description.trim().split("\n\n");
-    const aboutSummary = aboutParagraphs[0];
-    const aboutApproach = aboutParagraphs[1] ?? "";
-    const aboutInterest = aboutParagraphs[2] ?? "";
 
     return (
         <SectionBand
             id="about"
-            eyebrow="07 / About"
+            eyebrow="About Me"
             title="Concise engineering profile"
             description="Human context, academic signal, and backend engineering interests without turning the page into a resume wall."
         >
             <div className="grid gap-5">
+                <div className="grid gap-5 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
+                    <Panel className="p-5 md:p-6">
+                        <div className="flex h-full flex-col">
+                            <div>
+                                <p className="technical-label">Education</p>
+                                <h3 className="mt-2 text-xl font-semibold tracking-tight text-[var(--text-primary)]">
+                                    Academic base
+                                </h3>
+                                <div className="mt-5 grid gap-3">
+                                    {about.education.map((item) => (
+                                        <div
+                                            key={`${item.institute}-${item.duration}`}
+                                            className="grid gap-3 rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] p-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start"
+                                        >
+                                            <div>
+                                                <h4 className="text-sm font-semibold text-[var(--text-primary)]">{item.institute}</h4>
+                                                <p className="mt-1 text-sm text-[var(--text-secondary)]">{item.degree}</p>
+                                            </div>
+                                            <p className="font-mono text-xs leading-5 text-[var(--text-muted)] sm:text-right">
+                                                {item.duration}
+                                                <span className="block">{item.location}</span>
+                                            </p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <Divider className="my-4" />
+
+                            <div>
+                                <p className="technical-label">Certifications</p>
+                                <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                                    {about.certifications.map((item) => (
+                                        <a
+                                            key={item.href}
+                                            href={item.href}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label={`View certificate for ${item.title}`}
+                                            className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.025] px-3 py-2 transition-colors hover:border-[var(--accent-border)] hover:text-[var(--text-primary)]"
+                                        >
+                                            <span className="block text-xs font-semibold leading-5 text-[var(--text-secondary)]">
+                                                {item.title}
+                                            </span>
+                                            <span className="mt-0.5 block font-mono text-[0.68rem] uppercase leading-4 text-[var(--text-muted)]">
+                                                {item.provider}
+                                            </span>
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </Panel>
+
+                    <div className="grid gap-3">
+                        <Panel className="p-4 md:p-5">
+                            <p className="technical-label">Achievements</p>
+                            <h3 className="mt-2 text-xl font-semibold tracking-tight text-[var(--text-primary)]">
+                                Hackathon podiums
+                            </h3>
+
+                            <div className="mt-4 grid gap-2 sm:grid-cols-2">
+                                {about.achievements.map((item) => (
+                                    <div
+                                        key={`${item.title}-${item.detail}`}
+                                        className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] p-3"
+                                    >
+                                        <p className="text-sm font-semibold leading-5 text-[var(--text-primary)]">
+                                            {item.title}
+                                        </p>
+
+                                        {item.detail ? (
+                                            <p className="mt-1 text-xs leading-5 text-[var(--text-muted)]">
+                                                {item.detail}
+                                            </p>
+                                        ) : null}
+                                    </div>
+                                ))}
+                            </div>
+                        </Panel>
+
+                        <Panel className="p-4">
+                            <p className="technical-label">Algorithmic Programming Profile</p>
+                            <div className="mt-3 grid gap-2 sm:grid-rows-3">
+                                {about.algorithmicProfiles.map((item) => (
+                                    <div
+                                        key={item.platform}
+                                        className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.025] px-3 py-2"
+                                    >
+                                        <p className="font-mono text-[0.68rem] font-semibold uppercase leading-4 text-[var(--text-muted)]">
+                                            {item.platform}
+                                        </p>
+                                        <p className="mt-1 text-sm font-semibold leading-5 text-[var(--text-primary)]">
+                                            {item.value}
+                                        </p>
+                                        <p className="mt-0.5 text-xs leading-5 text-[var(--text-muted)]">
+                                            {item.detail}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        </Panel>
+                    </div>
+                </div>
                 <Panel className="overflow-hidden">
                     <div className="border-b border-[var(--border-subtle)] p-5 md:p-6">
                         <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_auto] md:items-start">
@@ -42,23 +143,19 @@ export function About() {
                         ))}
                     </div>
 
-                    <div className="grid gap-5 p-5 md:p-6 xl:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)]">
-                        <div>
-                            <p className="technical-label">Working Shape</p>
-                            <p className="copy-readable mt-4 text-base leading-8 text-[var(--text-secondary)]">{aboutSummary}</p>
-                            {aboutApproach ? (
-                                <p className="mt-4 rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] p-4 text-sm leading-7 text-[var(--text-muted)]">
-                                    {aboutApproach}
-                                </p>
-                            ) : null}
+                    <div className="grid gap-5 p-5 md:p-6 lg:grid-rows lg:items-start">
+                        <div className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] p-4">
+                            <p className="technical-label">Engineering Snapshot</p>
+                            <div className="mt-3 grid gap-3 text-sm leading-7 text-[var(--text-muted)]">
+                                {aboutParagraphs.map((paragraph) => (
+                                    <p key={paragraph}>{paragraph}</p>
+                                ))}
+                            </div>
                         </div>
 
                         <div>
                             <p className="technical-label">Engineering Interests</p>
-                            {aboutInterest ? (
-                                <p className="mt-3 text-sm leading-7 text-[var(--text-muted)]">{aboutInterest}</p>
-                            ) : null}
-                            <div className="mt-4 grid gap-3">
+                            <div className="mt-3 grid gap-3">
                                 {about.engineeringFocus.map((item) => (
                                     <div
                                         key={item.title}
@@ -72,63 +169,6 @@ export function About() {
                         </div>
                     </div>
                 </Panel>
-
-                <div className="grid gap-5 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
-                    <Panel className="p-5 md:p-6">
-                        <p className="technical-label">Education</p>
-                        <h3 className="mt-2 text-xl font-semibold tracking-tight text-[var(--text-primary)]">
-                            Academic base
-                        </h3>
-                        <div className="mt-5 grid gap-3">
-                            {about.education.map((item) => (
-                                <div
-                                    key={`${item.institute}-${item.duration}`}
-                                    className="grid gap-3 rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] p-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start"
-                                >
-                                    <div>
-                                        <h4 className="text-sm font-semibold text-[var(--text-primary)]">{item.institute}</h4>
-                                        <p className="mt-1 text-sm text-[var(--text-secondary)]">{item.degree}</p>
-                                    </div>
-                                    <p className="font-mono text-xs leading-5 text-[var(--text-muted)] sm:text-right">
-                                        {item.duration}
-                                        <span className="block">{item.location}</span>
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-                    </Panel>
-
-                    <Panel className="p-5 md:p-6">
-                        <div className="flex flex-col gap-5">
-                            <div>
-                                <p className="technical-label">Achievements</p>
-                                <div className="mt-4 grid gap-2 sm:grid-cols-2">
-                                    {about.achievements.map((item) => (
-                                        <div
-                                            key={item}
-                                            className="rounded-[var(--radius-sm)] bg-white/[0.025] px-3 py-2 text-sm leading-6 text-[var(--text-secondary)]"
-                                        >
-                                            {item}
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <Divider />
-
-                            <div>
-                                <p className="technical-label">Certifications</p>
-                                <div className="mt-4 flex flex-wrap gap-2">
-                                    {about.certifications.map((item) => (
-                                        <Pill key={item} className="font-mono text-xs uppercase">
-                                            {item}
-                                        </Pill>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </Panel>
-                </div>
             </div>
         </SectionBand>
     );

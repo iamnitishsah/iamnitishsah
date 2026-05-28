@@ -1,15 +1,9 @@
 export const about = {
-    description: `
-I am a backend-focused software engineer pursuing B.Tech at NIT Rourkela. I enjoy building systems that involve authentication, workflow management, async processing, and backend-heavy business logic.
-
-My experience primarily revolves around FastAPI, PostgreSQL, Redis, MongoDB, and backend architectures that require correctness, auditability, and structured API design. I have worked on systems involving RBAC, MFA, approval workflows, KPI synchronization, background task pipelines, and AI-integrated backend services.
-
-I am particularly interested in backend engineering problems around workflow modeling, distributed backend workflows, API security, and designing systems that remain maintainable as complexity grows.
-`,
+    description: `I am a backend-focused software engineer pursuing B.Tech at NIT Rourkela. I enjoy building systems that involve complex business logic, structured APIs, and scalable backend workflows.`,
 
     stats: [
         {
-            value: "50+",
+            value: "250+",
             label: "Production-grade API endpoints",
         },
 
@@ -40,9 +34,19 @@ I am particularly interested in backend engineering problems around workflow mod
 
             degree: "CBSE, Science (PCM)",
 
-            duration: "2022",
+            duration: "2020 - 2022",
 
             location: "Ranchi, Jharkhand",
+        },
+
+        {
+            institute: "St. Don Bosco School, Pakur",
+
+            degree: "CBSE",
+
+            duration: "2020",
+
+            location: "Pakur, Jharkhand",
         },
     ],
 
@@ -55,19 +59,49 @@ I am particularly interested in backend engineering problems around workflow mod
     ],
 
     achievements: [
-        "Runners-Up, Ethos 2025 — IIT Guwahati",
+        {
+            title: "Runners-Up, Ethos 2025",
+            detail: "IIT Guwahati",
+        },
 
-        "2nd Runners-Up, Hackfest 2025 — IIT-ISM Dhanbad",
+        {
+            title: "2nd Runners-Up, Hackfest 2025",
+            detail: "IIT-ISM Dhanbad",
+        },
+    ],
 
-        "CodeChef 3-Star (1600+) and Codeforces Pupil (1200+)",
+    algorithmicProfiles: [
+        {
+            platform: "CodeChef",
+            value: "3-Star",
+            detail: "1600+ rating",
+        },
 
-        "500+ problems solved across coding platforms",
+        {
+            platform: "Codeforces",
+            value: "Pupil",
+            detail: "1200+ rating",
+        },
+
+        {
+            platform: "Problem Solving",
+            value: "500+",
+            detail: "Problems solved across coding platforms",
+        },
     ],
 
     certifications: [
-        "Supervised Machine Learning — DeepLearning.AI",
+        {
+            title: "Supervised Machine Learning: Regression and Classification",
+            provider: "DeepLearning.AI",
+            href: "https://www.coursera.org/account/accomplishments/verify/3QPIONOJPY9G",
+        },
 
-        "Advanced Learning Algorithms — DeepLearning.AI",
+        {
+            title: "Advanced Learning Algorithms",
+            provider: "DeepLearning.AI",
+            href: "https://www.coursera.org/account/accomplishments/verify/JC23T9W6LH1V",
+        },
     ],
 
     extracurricular: [
@@ -80,31 +114,31 @@ I am particularly interested in backend engineering problems around workflow mod
 
     engineeringFocus: [
         {
-            title: "Authentication & Security",
+            title: "Backend Security",
 
             description:
-                "Designing systems with JWT authentication, RBAC, MFA, validation layers, and audit-aware backend flows.",
+                "Designing secure backend systems with strong authentication, authorization, and validation boundaries.",
         },
 
         {
-            title: "Workflow-driven Backend Systems",
+            title: "Workflow Systems",
 
             description:
-                "Building systems with approval workflows, state transitions, hierarchy traversal, immutable fields, and role-aware business logic.",
+                "Building backend flows involving approvals, state transitions, hierarchy-aware logic, and operational consistency.",
         },
 
         {
-            title: "Async Processing",
+            title: "Asynchronous Processing",
 
             description:
-                "Implementing async pipelines using Redis queues, Celery workers, retries, and non-blocking request flows.",
+                "Designing non-blocking backend workflows using queues, workers, retries, and event-driven execution patterns.",
         },
 
         {
-            title: "Backend Architecture",
+            title: "System Architecture",
 
             description:
-                "Designing maintainable backend services with clean API boundaries, structured schemas, and scalable database patterns.",
+                "Structuring maintainable backend services with clean abstractions, scalable data models, and predictable API behavior.",
         },
     ],
 };
