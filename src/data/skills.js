@@ -6,9 +6,9 @@ export const skills = [
             "API design, authorization, validation, and maintainable backend service boundaries.",
 
         signals: [
-            "JWT",
-            "RBAC",
-            "API DESIGN",
+            "AUTH",
+            "SECURITY",
+            "WORKFLOWS",
         ],
 
         items: [
@@ -30,8 +30,8 @@ export const skills = [
 
         signals: [
             "ASYNC",
-            "REDIS",
-            "WORKERS",
+            "QUEUE-DRIVEN",
+            "SCALABLE",
         ],
 
         items: [
@@ -50,9 +50,9 @@ export const skills = [
             "Relational and document storage patterns, schema design, and query-focused optimization.",
 
         signals: [
-            "POSTGRESQL",
             "MODELING",
             "QUERYING",
+            "OPTIMIZATION",
         ],
 
         items: [
@@ -73,8 +73,8 @@ export const skills = [
 
         signals: [
             "LLM",
-            "VALIDATION",
             "RAG",
+            "STRUCTURED",
         ],
 
         items: [
@@ -93,9 +93,9 @@ export const skills = [
             "Primary implementation languages for backend logic, scripting, and data interaction.",
 
         signals: [
-            "PYTHON",
-            "SQL",
-            "JAVASCRIPT",
+            "CORE",
+            "BACKEND",
+            "SYSTEMS",
         ],
 
         items: [
@@ -110,12 +110,12 @@ export const skills = [
         category: "Tools & Platforms",
 
         summary:
-            "Operational tooling used for local development, containerization, version control, and API workflows.",
+            "Operational tooling used for development, containerization, and engineering workflows.",
 
         signals: [
-            "DOCKER",
-            "LINUX",
-            "GIT",
+            "DEVOPS",
+            "CONTAINERS",
+            "WORKFLOW",
         ],
 
         items: [
