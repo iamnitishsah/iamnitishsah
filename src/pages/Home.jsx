@@ -1,25 +1,22 @@
 import Hero from "../sections/Hero";
-import {
-    AboutPreview,
-    ContactPreview,
-    ExperiencePreview,
-    FeaturedProjectsPreview,
-    FocusPreview,
-    SecondaryProjectsPreview,
-    SkillsPreview,
-} from "../sections/HomePreviewSections";
+import { About } from "../sections/About";
+import { Contact } from "../sections/Contact";
+import { Experience } from "../sections/Experience";
+import { Focus } from "../sections/Focus";
+import { FeaturedProjects, SecondaryProjects } from "../sections/Projects";
+import { Skills } from "../sections/Skills";
 
 export default function Home() {
     return (
         <main id="content" className="app-shell relative" tabIndex={-1}>
             <Hero />
-            <ExperiencePreview />
-            <FeaturedProjectsPreview />
-            <FocusPreview />
-            <SkillsPreview />
-            <SecondaryProjectsPreview />
-            <AboutPreview />
-            <ContactPreview />
+            <Experience />
+            <FeaturedProjects />
+            <Focus />
+            <Skills />
+            <SecondaryProjects />
+            <About />
+            <Contact />
         </main>
     );
 }

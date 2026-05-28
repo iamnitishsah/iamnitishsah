@@ -3,7 +3,7 @@ import { experiences } from "../data/experience";
 import { profile } from "../data/profile";
 import profilePhoto from "../assets/images/Official.jpeg";
 import Button from "../components/common/Button";
-import { Badge, Container, Divider, Metric, Panel, Pill, Section } from "../components/ui";
+import { Badge, Container, Divider, Metric, Pill, Section } from "../components/ui";
 
 export default function Hero() {
     const primaryExperience = experiences[0];
@@ -74,7 +74,7 @@ export default function Hero() {
                     <span className="hero-orbit -bottom-4 left-2 h-28 w-28" aria-hidden="true" />
 
                     <div className="profile-frame relative z-10 overflow-hidden p-3">
-                        <div className="grid gap-3 sm:grid-cols-[minmax(0,0.96fr)_minmax(180px,0.72fr)] lg:grid-cols-1 xl:grid-cols-[minmax(0,0.95fr)_minmax(170px,0.72fr)]">
+                        <div className="grid gap-3">
                             <div className="relative min-h-[430px] overflow-hidden rounded-[18px] bg-[var(--bg-raised)] sm:min-h-[390px] lg:min-h-[520px] xl:min-h-[440px]">
                                 <img
                                     src={profilePhoto}
@@ -89,19 +89,17 @@ export default function Hero() {
                                 </div>
                             </div>
 
-                            <div className="grid gap-3">
-                                <Panel className="p-4 shadow-none">
+                            <div className="grid gap-4 rounded-[var(--radius-lg)] bg-[rgba(21,20,26,0.42)] p-4 sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+                                <div>
                                     <p className="technical-label">Role Fit</p>
-                                    <div className="mt-3 grid gap-2">
+                                    <div className="mt-3 flex flex-wrap gap-2">
                                         {profile.roles.map((role) => (
-                                            <div key={role} className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.04)] px-3 py-2 text-sm font-medium text-[var(--text-primary)]">
-                                                {role}
-                                            </div>
+                                            <Badge key={role}>{role}</Badge>
                                         ))}
                                     </div>
-                                </Panel>
+                                </div>
 
-                                <Panel className="p-4 shadow-none">
+                                <div>
                                     <p className="technical-label">Active Stack</p>
                                     <div className="mt-3 flex flex-wrap gap-2">
                                         {primaryExperience.tech.slice(0, 6).map((item) => (
@@ -110,7 +108,7 @@ export default function Hero() {
                                             </Pill>
                                         ))}
                                     </div>
-                                </Panel>
+                                </div>
                             </div>
                         </div>
 
@@ -123,14 +121,14 @@ export default function Hero() {
 
                         <Divider className="my-3" />
 
-                        <div className="grid gap-3 md:grid-cols-3">
+                        <div className="grid gap-3">
                             {focusCards.map((item) => (
                                 <div
                                     key={item.title}
-                                    className="panel-interactive rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.04)] p-4"
+                                    className="grid gap-2 rounded-[var(--radius-md)] bg-[rgba(255,248,237,0.035)] px-4 py-3 sm:grid-cols-[minmax(0,0.36fr)_minmax(0,1fr)]"
                                 >
                                     <p className="technical-label">{item.title}</p>
-                                    <p className="mt-3 text-sm leading-6 text-[var(--text-secondary)]">{item.description}</p>
+                                    <p className="text-sm leading-6 text-[var(--text-secondary)]">{item.description}</p>
                                 </div>
                             ))}
                         </div>
