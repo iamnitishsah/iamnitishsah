@@ -64,10 +64,10 @@ export function ActionLink({ href, children, kind }) {
             href={href}
             target={href?.startsWith("#") || href?.startsWith("/") ? undefined : "_blank"}
             rel={href?.startsWith("#") || href?.startsWith("/") ? undefined : "noopener noreferrer"}
-            className="inline-flex items-center gap-2 rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.025] px-4 py-2.5 text-sm font-medium text-[var(--text-secondary)] transition-all duration-200 hover:-translate-y-px hover:border-[var(--accent-border)] hover:bg-white/[0.045] hover:text-[var(--text-primary)]"
+            className="inline-flex items-center gap-2 rounded-[var(--radius-md)] border border-[var(--link-border)] bg-[var(--link-soft)] px-4 py-2.5 text-sm font-medium text-[var(--link)] transition-all duration-200 hover:-translate-y-px hover:border-[var(--link-strong)] hover:bg-[rgba(125,211,252,0.18)] hover:text-[var(--link-strong)]"
         >
             {children}
-            {kind ? <span className="font-mono text-xs text-[var(--text-muted)]">{kind}</span> : null}
+            {kind ? <span className="font-mono text-xs text-[var(--link-strong)]">{kind}</span> : null}
         </a>
     );
 }

@@ -23,7 +23,7 @@ export default function Navbar() {
             <div className="container-shell flex h-16 items-center justify-between">
                 <a
                     href="#home"
-                    className="group inline-flex items-center gap-3 font-mono text-sm font-semibold text-[var(--text-primary)] transition-opacity duration-200 hover:opacity-100"
+                    className="group inline-flex items-center gap-3 font-mono text-sm font-semibold text-[var(--link)] transition-colors duration-200 hover:text-[var(--link-strong)]"
                     aria-label={`${profile.name} home`}
                 >
                     <img
@@ -43,8 +43,8 @@ export default function Navbar() {
                                 aria-current={activeSection === link.href.slice(1) ? "page" : undefined}
                                 className={`rounded-[var(--radius-sm)] px-3 py-2 text-sm font-medium transition-all duration-200 ${
                                     activeSection === link.href.slice(1)
-                                        ? "bg-white/[0.06] text-[var(--text-primary)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
-                                        : "text-[var(--text-muted)] hover:bg-white/[0.035] hover:text-[var(--text-primary)]"
+                                        ? "bg-[var(--link-soft)] text-[var(--link-strong)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
+                                        : "text-[var(--link)] hover:bg-[var(--link-soft)] hover:text-[var(--link-strong)]"
                                 }`}
                             >
                                 {link.name}
@@ -75,8 +75,8 @@ export default function Navbar() {
                                     aria-current={activeSection === link.href.slice(1) ? "page" : undefined}
                                     className={`block rounded-[var(--radius-md)] px-3 py-3 text-sm font-medium ${
                                         activeSection === link.href.slice(1)
-                                            ? "bg-white/[0.06] text-[var(--text-primary)]"
-                                            : "text-[var(--text-secondary)] hover:bg-white/[0.035] hover:text-[var(--text-primary)]"
+                                            ? "bg-[var(--link-soft)] text-[var(--link-strong)]"
+                                            : "text-[var(--link)] hover:bg-[var(--link-soft)] hover:text-[var(--link-strong)]"
                                     }`}
                                 >
                                     {link.name}

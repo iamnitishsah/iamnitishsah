@@ -28,7 +28,7 @@ export default function Footer() {
                     <ul className="grid gap-2 text-sm">
                         {links.map((link) => (
                             <li key={link.name}>
-                                <a className="text-[var(--text-muted)] transition-colors hover:text-[var(--text-primary)]" href={link.href}>
+                                <a className="text-[var(--link)] underline decoration-[var(--link-border)] underline-offset-4 transition-colors hover:text-[var(--link-strong)]" href={link.href}>
                                     {link.name}
                                 </a>
                             </li>
@@ -39,17 +39,17 @@ export default function Footer() {
                 <div>
                     <h3 className="technical-label mb-4">Connect</h3>
                     <div className="flex flex-wrap gap-3">
-                        <a className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)]" href={profile.socials.github} target="_blank" rel="noopener noreferrer">
+                        <a className="text-sm text-[var(--link)] underline decoration-[var(--link-border)] underline-offset-4 hover:text-[var(--link-strong)]" href={profile.socials.github} target="_blank" rel="noopener noreferrer">
                             GitHub
                         </a>
-                        <a className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)]" href={profile.socials.linkedin} target="_blank" rel="noopener noreferrer">
+                        <a className="text-sm text-[var(--link)] underline decoration-[var(--link-border)] underline-offset-4 hover:text-[var(--link-strong)]" href={profile.socials.linkedin} target="_blank" rel="noopener noreferrer">
                             LinkedIn
                         </a>
-                        <a className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)]" href={profile.socials.mail}>
+                        <a className="text-sm text-[var(--link)] underline decoration-[var(--link-border)] underline-offset-4 hover:text-[var(--link-strong)]" href={profile.socials.mail}>
                             Email
                         </a>
                     </div>
-                    <Button href={profile.resumePath} variant="secondary" className="mt-6">
+                    <Button href={profile.resumePath} variant="secondary" className="mt-6 border-[var(--link-border)] text-[var(--link)] hover:border-[var(--link-strong)] hover:text-[var(--link-strong)]">
                         Download Resume
                     </Button>
                 </div>

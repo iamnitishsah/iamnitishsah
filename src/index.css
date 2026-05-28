@@ -28,6 +28,10 @@
     --rose: #EF8F9A;
     --violet: #A990FF;
     --teal: #61D6CF;
+    --link: #7DD3FC;
+    --link-strong: #BAE6FD;
+    --link-soft: rgba(125, 211, 252, 0.12);
+    --link-border: rgba(125, 211, 252, 0.42);
 
     --border-subtle: rgba(255, 248, 237, 0.09);
     --border-medium: rgba(255, 248, 237, 0.14);

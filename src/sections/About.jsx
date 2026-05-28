@@ -53,12 +53,12 @@ export function About() {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             aria-label={`View certificate for ${item.title}`}
-                                            className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.025] px-3 py-2 transition-colors hover:border-[var(--accent-border)] hover:text-[var(--text-primary)]"
+                                            className="rounded-[var(--radius-md)] border border-[var(--link-border)] bg-[var(--link-soft)] px-3 py-2 text-[var(--link)] transition-colors hover:border-[var(--link-strong)] hover:bg-[rgba(125,211,252,0.18)] hover:text-[var(--link-strong)]"
                                         >
-                                            <span className="block text-xs font-semibold leading-5 text-[var(--text-secondary)]">
+                                            <span className="block text-xs font-semibold leading-5 text-inherit">
                                                 {item.title}
                                             </span>
-                                            <span className="mt-0.5 block font-mono text-[0.68rem] uppercase leading-4 text-[var(--text-muted)]">
+                                            <span className="mt-0.5 block font-mono text-[0.68rem] uppercase leading-4 text-[var(--link-strong)]">
                                                 {item.provider}
                                             </span>
                                         </a>

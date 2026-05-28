@@ -54,21 +54,21 @@ export function Contact() {
                     <div>
                         <p className="technical-label">Direct Channels</p>
                         <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
-                            <a className="panel-interactive rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.025] px-4 py-3" href={`mailto:${contact.email}`}>
+                            <a className="panel-interactive rounded-[var(--radius-md)] border border-[var(--link-border)] bg-[var(--link-soft)] px-4 py-3 transition-colors hover:border-[var(--link-strong)] hover:bg-[rgba(125,211,252,0.18)]" href={`mailto:${contact.email}`}>
                                 <p className="technical-label">Email</p>
-                                <p className="mt-1 break-words text-sm text-[var(--text-primary)]">{contact.email}</p>
+                                <p className="mt-1 break-words text-sm font-medium text-[var(--link)]">{contact.email}</p>
                             </a>
-                            <a className="panel-interactive rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.025] px-4 py-3" href={contact.linkedin} target="_blank" rel="noopener noreferrer">
+                            <a className="panel-interactive rounded-[var(--radius-md)] border border-[var(--link-border)] bg-[var(--link-soft)] px-4 py-3 transition-colors hover:border-[var(--link-strong)] hover:bg-[rgba(125,211,252,0.18)]" href={contact.linkedin} target="_blank" rel="noopener noreferrer">
                                 <p className="technical-label">LinkedIn</p>
-                                <p className="mt-1 break-words text-sm text-[var(--text-primary)]">{contact.linkedin.replace("https://", "")}</p>
+                                <p className="mt-1 break-words text-sm font-medium text-[var(--link)]">{contact.linkedin.replace("https://", "")}</p>
                             </a>
-                            <a className="panel-interactive rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.025] px-4 py-3" href={contact.github} target="_blank" rel="noopener noreferrer">
+                            <a className="panel-interactive rounded-[var(--radius-md)] border border-[var(--link-border)] bg-[var(--link-soft)] px-4 py-3 transition-colors hover:border-[var(--link-strong)] hover:bg-[rgba(125,211,252,0.18)]" href={contact.github} target="_blank" rel="noopener noreferrer">
                                 <p className="technical-label">GitHub</p>
-                                <p className="mt-1 break-words text-sm text-[var(--text-primary)]">{contact.github.replace("https://", "")}</p>
+                                <p className="mt-1 break-words text-sm font-medium text-[var(--link)]">{contact.github.replace("https://", "")}</p>
                             </a>
-                            <a className="panel-interactive rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.025] px-4 py-3" href={profile.resumePath}>
+                            <a className="panel-interactive rounded-[var(--radius-md)] border border-[var(--link-border)] bg-[var(--link-soft)] px-4 py-3 transition-colors hover:border-[var(--link-strong)] hover:bg-[rgba(125,211,252,0.18)]" href={profile.resumePath}>
                                 <p className="technical-label">Resume</p>
-                                <p className="mt-1 text-sm text-[var(--text-primary)]">Download PDF</p>
+                                <p className="mt-1 text-sm font-medium text-[var(--link)]">Download PDF</p>
                             </a>
                         </div>
                     </div>
