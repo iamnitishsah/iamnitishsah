@@ -52,7 +52,7 @@ export const experiences = [
 
             "Implemented audit logging for critical actions to improve traceability and operational visibility across backend workflows.",
 
-            "Optimized high-volume APIs using query improvements and pagination strategies, reducing average response times by 30–40%.",
+            "Designed the MFA implementation pipeline across Email OTP and TOTP verification, including validation flow, retry handling, and secure user state transitions.",
         ],
 
         highlights: [

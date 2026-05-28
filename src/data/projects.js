@@ -101,7 +101,7 @@ export const featuredProjects = [
 
         category: "AI-integrated Backend System",
 
-        status: "Featured",
+        status: "Flagship",
 
         description:
             "AI campus surveillance backend designed to correlate multi-source campus events through structured relational models and secure APIs. Focused on backend modeling, event correlation, and ML service integration.",
@@ -180,155 +180,71 @@ export const featuredProjects = [
     {
         id: 3,
 
-        title: "MediMind",
-
-        category: "AI-assisted Backend Application",
-
-        status: "Featured",
-
-        description:
-            "Medical assistant backend integrating LLM-driven prescription generation with schema-validated API responses, secure authentication, and structured relational data handling.",
-
-        problem:
-            "A medical assistant workflow needed guarded AI integration, structured backend validation, and secure API handling for sensitive health-oriented interactions.",
-
-        architecture: [
-            "DRF + FastAPI integration",
-
-            "Structured API validation",
-
-            "JWT authentication",
-
-            "LLM-backed response generation",
-        ],
-
-        capabilities: [
-            "Schema-validated AI responses",
-            "Authentication-aware APIs",
-            "Structured backend orchestration",
-            "Relational data handling",
-        ],
-
-        systems: [
-            "Structured Validation",
-            "JWT Auth",
-            "LLM Integration",
-            "Relational Models",
-            "API Contracts",
-        ],
-
-        challenges: [
-            "Constraining AI-generated outputs through structured response validation",
-            "Combining DRF and FastAPI roles without weakening API clarity",
-            "Maintaining authentication and relational consistency around AI-backed flows",
-        ],
-
-        tech: [
-            "Django REST Framework",
-            "FastAPI",
-            "PostgreSQL",
-            "LangChain",
-            "Pydantic",
-        ],
-
-        github: "https://github.com/iamnitishsah/MediMind",
-
-        live: "https://medimindai.vercel.app/",
-
-        links: [
-            {
-                label: "GitHub",
-                href: "https://github.com/iamnitishsah/MediMind",
-                kind: "github",
-            },
-
-            {
-                label: "Live",
-                href: "https://medimindai.vercel.app/",
-                kind: "live",
-            },
-        ],
-    },
-];
-
-export const secondaryProjects = [
-    {
-        id: 4,
-
-        title: "NITR-Mart",
-
-        category: "Workflow-backed Marketplace Backend",
-
-        status: "Supporting Build",
-
-        description:
-            "Campus marketplace platform with JWT authentication, email verification restricted to institute domains, image hosting workflows, and role-aware listing management.",
-
-        problem:
-            "A campus-only marketplace required trusted user verification, role-aware listing workflows, and authenticated CRUD handling tied to institute-restricted onboarding.",
-
-        systems: [
-            "JWT Auth",
-            "Institute Verification",
-            "CRUD Workflows",
-        ],
-
-        tech: [
-            "Next.js",
-            "Django REST Framework",
-            "PostgreSQL",
-            "JWT",
-            "Cloudinary",
-        ],
-
-        github: "https://github.com/iamnitishsah/NITR-Mart",
-
-        live: "https://nitrmart.vercel.app",
-
-        links: [
-            {
-                label: "GitHub",
-                href: "https://github.com/iamnitishsah/NITR-Mart",
-                kind: "github",
-            },
-
-            {
-                label: "Live",
-                href: "https://nitrmart.vercel.app",
-                kind: "live",
-            },
-        ],
-    },
-
-    {
-        id: 5,
-
         title: "MetaFin",
 
         category: "ML-assisted Financial Backend",
 
-        status: "Supporting Build",
+        status: "Featured",
+
+        achievement:
+            "2nd Runners-Up, HackFest 2025 — IIT-ISM Dhanbad",
 
         description:
-            "Investment platform integrating ML-based stock analysis, sentiment aggregation, recommendation logic, and financial data visualization.",
+            "Financial analysis and recommendation platform combining ML-driven prediction systems, sentiment aggregation pipelines, and backend orchestration for investment-focused workflows.",
 
         problem:
-            "A financial analysis workflow needed backend orchestration for recommendation logic, sentiment-aware processing, and structured market data handling.",
+            "Retail investors often struggle with fragmented market information, financial jargon, and disconnected analysis tools. The platform required backend systems capable of aggregating financial data, sentiment signals, ML predictions, and personalized recommendations into simplified user-facing workflows.",
+
+        architecture: [
+            "Backend-driven recommendation workflows",
+
+            "Hybrid ML + LLM analysis pipelines",
+
+            "Real-time market data integration",
+
+            "Sentiment aggregation from external APIs",
+
+            "Structured financial analytics processing",
+        ],
+
+        capabilities: [
+            "Stock recommendation workflows",
+            "Sentiment-aware analysis",
+            "Hybrid recommendation systems",
+            "Market trend visualization",
+        ],
 
         systems: [
-            "Recommendation Logic",
-            "ML Analysis",
-            "Financial Data",
+            "ML Prediction Pipeline",
+            "Sentiment Aggregator",
+            "Financial Analytics Layer",
+            "Real-time Data Processing",
+        ],
+
+        challenges: [
+            "Combining ML predictions, external financial APIs, and sentiment analysis into consistent recommendation workflows",
+
+            "Designing backend flows that simplified financial insights for non-technical users",
+
+            "Managing real-time market data processing alongside personalized recommendation generation",
         ],
 
         tech: [
-            "Next.js",
-            "Django REST Framework",
+            "DRF",
             "PostgreSQL",
             "Machine Learning",
+            "Yahoo Finance API",
+            "Reddit API"
         ],
 
         github: "https://github.com/iamnitishsah/MetaFin",
+
+        highlights: [
+            "Hybrid recommendation system",
+            "Sentiment aggregation pipelines",
+            "ML-assisted investment analysis",
+            "Real-time financial data workflows",
+        ],
 
         links: [
             {
@@ -338,4 +254,77 @@ export const secondaryProjects = [
             },
         ],
     },
+
+    // {
+    //     id: 4,
+    //
+    //     title: "MediMind",
+    //
+    //     category: "AI-assisted Backend Application",
+    //
+    //     status: "Featured",
+    //
+    //     description:
+    //         "Medical assistant backend integrating LLM-driven prescription generation with schema-validated API responses, secure authentication, and structured relational data handling.",
+    //
+    //     problem:
+    //         "A medical assistant workflow needed guarded AI integration, structured backend validation, and secure API handling for sensitive health-oriented interactions.",
+    //
+    //     architecture: [
+    //         "DRF + FastAPI integration",
+    //
+    //         "Structured API validation",
+    //
+    //         "JWT authentication",
+    //
+    //         "LLM-backed response generation",
+    //     ],
+    //
+    //     capabilities: [
+    //         "Schema-validated AI responses",
+    //         "Authentication-aware APIs",
+    //         "Structured backend orchestration",
+    //         "Relational data handling",
+    //     ],
+    //
+    //     systems: [
+    //         "Structured Validation",
+    //         "JWT Auth",
+    //         "LLM Integration",
+    //         "Relational Models",
+    //         "API Contracts",
+    //     ],
+    //
+    //     challenges: [
+    //         "Constraining AI-generated outputs through structured response validation",
+    //         "Combining DRF and FastAPI roles without weakening API clarity",
+    //         "Maintaining authentication and relational consistency around AI-backed flows",
+    //     ],
+    //
+    //     tech: [
+    //         "Django REST Framework",
+    //         "FastAPI",
+    //         "PostgreSQL",
+    //         "LangChain",
+    //         "Pydantic",
+    //     ],
+    //
+    //     github: "https://github.com/iamnitishsah/MediMind",
+    //
+    //     live: "https://medimindai.vercel.app/",
+    //
+    //     links: [
+    //         {
+    //             label: "GitHub",
+    //             href: "https://github.com/iamnitishsah/MediMind",
+    //             kind: "github",
+    //         },
+    //
+    //         {
+    //             label: "Live",
+    //             href: "https://medimindai.vercel.app/",
+    //             kind: "live",
+    //         },
+    //     ],
+    // },
 ];

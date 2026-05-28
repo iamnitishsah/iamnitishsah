@@ -36,7 +36,7 @@ export default function Hero() {
                     </div>
 
                     <div className="mt-8 max-w-3xl">
-                        <p className="technical-label">01 / Backend Engineering Portfolio</p>
+                        <p className="technical-label">Hello, I am</p>
                         <h1 className="mt-4 text-balance text-5xl font-bold leading-[0.98] tracking-tight text-[var(--text-primary)] sm:text-6xl lg:text-[4.55rem] xl:text-[5rem]">
                             {profile.name}
                         </h1>
