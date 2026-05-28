@@ -5,7 +5,6 @@ import { engineeringFocus } from "../data/focus";
 import { featuredProjects, secondaryProjects } from "../data/projects";
 import { profile } from "../data/profile";
 import { skills } from "../data/skills";
-import profilePhoto from "../assets/images/Official.jpeg";
 import { Badge, Container, Divider, Metric, Panel, Pill, Section, SectionHeading } from "../components/ui";
 
 function SectionBand({ id, eyebrow, title, description, children, className = "" }) {
@@ -414,70 +413,74 @@ export function AboutPreview() {
         >
             <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(320px,0.85fr)]">
                 <Panel className="overflow-hidden">
-                    <div className="grid gap-0 md:grid-cols-[220px_minmax(0,1fr)]">
-                        <div className="relative min-h-72 overflow-hidden border-b border-[var(--border-subtle)] md:border-b-0 md:border-r md:border-[var(--border-subtle)]">
-                            <img
-                                src={profilePhoto}
-                                alt={profile.name}
-                                className="h-full w-full object-cover object-[50%_18%]"
-                            />
-                            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[rgba(21,20,26,0.94)] to-transparent p-4">
-                                <p className="text-sm font-semibold text-[var(--text-primary)]">{profile.name}</p>
-                                <p className="mt-1 font-mono text-xs text-[var(--accent-strong)]">{profile.location}</p>
+                    <div className="border-b border-[var(--border-subtle)] p-5 md:p-6">
+                        <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_auto] md:items-start">
+                            <div>
+                                <p className="technical-label">Profile Summary</p>
+                                <h3 className="mt-2 max-w-2xl text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
+                                    {profile.headline}
+                                </h3>
                             </div>
-                        </div>
-
-                        <div className="p-5 md:p-6">
-                            <p className="technical-label">Profile Summary</p>
-                            <p className="copy-readable mt-4 text-base leading-8 text-[var(--text-secondary)]">{aboutSummary}</p>
-                            {aboutInterest ? (
-                                <p className="copy-readable mt-4 text-sm leading-7 text-[var(--text-muted)]">{aboutInterest}</p>
-                            ) : null}
+                            <SignalRow items={profile.roles} />
                         </div>
                     </div>
 
-                    <Divider className="my-5" />
-
-                    <div className="grid gap-4 px-5 md:grid-cols-3 md:px-6">
+                    <div className="grid gap-3 border-b border-[var(--border-subtle)] p-5 md:grid-cols-3 md:p-6">
                         {about.stats.map((stat) => (
-                            <div key={stat.label}>
-                                <p className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">{stat.value}</p>
+                            <div
+                                key={stat.label}
+                                className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.04)] p-4"
+                            >
+                                <p className="text-3xl font-semibold tracking-tight text-[var(--accent-strong)]">{stat.value}</p>
                                 <p className="mt-1 text-sm text-[var(--text-muted)]">{stat.label}</p>
                             </div>
                         ))}
                     </div>
 
-                    <Divider className="my-5" />
+                    <div className="grid gap-5 p-5 md:p-6 xl:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)]">
+                        <div>
+                            <p className="technical-label">Working Shape</p>
+                            <p className="copy-readable mt-4 text-base leading-8 text-[var(--text-secondary)]">{aboutSummary}</p>
+                            {aboutApproach ? (
+                                <p className="mt-4 rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] p-4 text-sm leading-7 text-[var(--text-muted)]">
+                                    {aboutApproach}
+                                </p>
+                            ) : null}
+                        </div>
 
-                    <div className="px-5 pb-5 md:px-6 md:pb-6">
-                        <p className="technical-label">Engineering Interests</p>
-                        <div className="mt-3 grid gap-3 md:grid-cols-2">
+                        <div>
+                            <p className="technical-label">Engineering Interests</p>
+                            {aboutInterest ? (
+                                <p className="mt-3 text-sm leading-7 text-[var(--text-muted)]">{aboutInterest}</p>
+                            ) : null}
+                            <div className="mt-4 grid gap-3 sm:grid-cols-2">
                             {about.engineeringFocus.map((item) => (
                                 <div
                                     key={item.title}
-                                    className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.025] p-4"
+                                    className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] p-4"
                                 >
                                     <h4 className="text-sm font-semibold text-[var(--text-primary)]">{item.title}</h4>
                                     <p className="mt-2 text-sm leading-6 text-[var(--text-secondary)]">{item.description}</p>
                                 </div>
                             ))}
+                            </div>
                         </div>
-                        {aboutApproach ? (
-                            <p className="mt-4 rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] p-4 text-sm leading-7 text-[var(--text-muted)]">
-                                {aboutApproach}
-                            </p>
-                        ) : null}
                     </div>
                 </Panel>
 
                 <div className="grid gap-5">
-                    <Panel className="p-5 md:p-6">
-                        <p className="technical-label">Education</p>
-                        <div className="mt-4 grid gap-4">
+                    <Panel className="overflow-hidden">
+                        <div className="border-b border-[var(--border-subtle)] p-5 md:p-6">
+                            <p className="technical-label">Education</p>
+                            <h3 className="mt-2 text-xl font-semibold tracking-tight text-[var(--text-primary)]">
+                                Academic base
+                            </h3>
+                        </div>
+                        <div className="grid gap-3 p-5 md:p-6">
                             {about.education.map((item) => (
                                 <div
                                     key={`${item.institute}-${item.duration}`}
-                                    className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.025] p-4"
+                                    className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] p-4"
                                 >
                                     <h4 className="text-sm font-semibold text-[var(--text-primary)]">{item.institute}</h4>
                                     <p className="mt-1 text-sm text-[var(--text-secondary)]">{item.degree}</p>
@@ -491,11 +494,11 @@ export function AboutPreview() {
 
                     <Panel className="p-5 md:p-6">
                         <p className="technical-label">Achievements</p>
-                        <div className="mt-4 grid gap-3">
+                        <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
                             {about.achievements.map((item) => (
                                 <div
                                     key={item}
-                                    className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.025] px-4 py-3 text-sm text-[var(--text-secondary)]"
+                                    className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] px-4 py-3 text-sm text-[var(--text-secondary)]"
                                 >
                                     {item}
                                 </div>
