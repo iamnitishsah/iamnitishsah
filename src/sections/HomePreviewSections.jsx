@@ -5,6 +5,7 @@ import { engineeringFocus } from "../data/focus";
 import { featuredProjects, secondaryProjects } from "../data/projects";
 import { profile } from "../data/profile";
 import { skills } from "../data/skills";
+import profilePhoto from "../assets/images/Official.jpeg";
 import { Badge, Container, Divider, Metric, Panel, Pill, Section, SectionHeading } from "../components/ui";
 
 function SectionBand({ id, eyebrow, title, description, children, className = "" }) {
@@ -13,8 +14,8 @@ function SectionBand({ id, eyebrow, title, description, children, className = ""
     return (
         <Section id={id} className={`py-14 md:py-18 ${className}`} labelledBy={headingId}>
             <Container>
-                <div className="grid gap-8 lg:grid-cols-[minmax(0,280px)_minmax(0,1fr)] lg:gap-10">
-                    <SectionHeading eyebrow={eyebrow} title={title} id={headingId}>
+                <div className="grid gap-8 lg:grid-cols-[minmax(0,250px)_minmax(0,1fr)] lg:gap-10">
+                    <SectionHeading eyebrow={eyebrow} title={title} id={headingId} className="lg:sticky lg:top-24 lg:self-start">
                         {description}
                     </SectionHeading>
                     <div className="animate-enter">{children}</div>
@@ -40,7 +41,7 @@ export function ExperiencePreview() {
             id="experience"
             eyebrow="02 / Experience"
             title="Production-oriented backend ownership"
-            description="The strongest credibility signal here is implementation depth across authentication, async processing, API engineering, and operational reliability."
+            description="Implementation depth across authentication, async processing, API engineering, and operational reliability."
         >
             <div className="grid gap-5">
                 {experiences.map((experience) => (
@@ -88,7 +89,7 @@ export function ExperiencePreview() {
                                             {domain.items.map((item) => (
                                                 <div
                                                     key={item}
-                                                    className="rounded-[var(--radius-sm)] border border-[var(--border-subtle)] bg-white/[0.02] px-3 py-2.5 text-sm leading-6 text-[var(--text-secondary)]"
+                                                    className="rounded-[var(--radius-sm)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] px-3 py-2.5 text-sm leading-6 text-[var(--text-secondary)]"
                                                 >
                                                     {item}
                                                 </div>
@@ -138,7 +139,7 @@ export function FeaturedProjectsPreview() {
             id="projects"
             eyebrow="03 / Projects"
             title="Featured backend case studies"
-            description="These projects are presented as system narratives: problem shape, backend architecture, engineering constraints, and operational capabilities."
+            description="System narratives focused on problem shape, architecture, constraints, and operational capability."
         >
             <div className="grid gap-5">
                 {featuredProjects.slice(0, 3).map((project, index) => (
@@ -166,7 +167,7 @@ export function FeaturedProjectsPreview() {
                                     {project.highlights?.map((item) => (
                                         <div
                                             key={item}
-                                            className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.025] px-3 py-2.5 text-sm text-[var(--text-secondary)]"
+                                            className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.04)] px-3 py-2.5 text-sm text-[var(--text-secondary)]"
                                         >
                                             <span className="font-mono text-xs text-[var(--text-muted)]">signal</span>
                                             <div className="mt-1 font-medium text-[var(--text-primary)]">{item}</div>
@@ -281,7 +282,7 @@ export function FocusPreview() {
             id="focus"
             eyebrow="04 / Focus"
             title="Engineering direction"
-            description="These are the backend problem spaces that shape implementation choices, system design priorities, and architectural tradeoffs."
+            description="Backend problem spaces that shape implementation choices and architectural tradeoffs."
         >
             <div className="grid gap-5">
                 <Panel className="overflow-hidden">
@@ -338,7 +339,7 @@ export function SkillsPreview() {
             id="skills"
             eyebrow="05 / Skills"
             title="Backend stack map"
-            description="The stack is grouped by engineering function so recruiters can scan backend capability areas instead of reading a generic tool inventory."
+            description="Grouped by engineering function for fast backend capability scanning."
         >
             <div className="grid gap-5">
                 <Panel className="overflow-hidden">
@@ -402,25 +403,42 @@ export function AboutPreview() {
     const aboutParagraphs = about.description.trim().split("\n\n");
     const aboutSummary = aboutParagraphs[0];
     const aboutApproach = aboutParagraphs[1] ?? "";
+    const aboutInterest = aboutParagraphs[2] ?? "";
 
     return (
         <SectionBand
             id="about"
             eyebrow="07 / About"
             title="Concise engineering profile"
-            description="Human context is present here, but the framing stays grounded in implementation priorities, system design interests, and professional signals."
+            description="Human context, academic signal, and backend engineering interests without turning the page into a resume wall."
         >
             <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(320px,0.85fr)]">
-                <Panel className="p-5 md:p-6">
-                    <p className="technical-label">Profile Summary</p>
-                    <p className="copy-readable mt-4 text-base leading-8 text-[var(--text-secondary)]">{aboutSummary}</p>
-                    {aboutApproach ? (
-                        <p className="copy-readable mt-4 text-sm leading-7 text-[var(--text-muted)]">{aboutApproach}</p>
-                    ) : null}
+                <Panel className="overflow-hidden">
+                    <div className="grid gap-0 md:grid-cols-[220px_minmax(0,1fr)]">
+                        <div className="relative min-h-72 overflow-hidden border-b border-[var(--border-subtle)] md:border-b-0 md:border-r md:border-[var(--border-subtle)]">
+                            <img
+                                src={profilePhoto}
+                                alt={profile.name}
+                                className="h-full w-full object-cover object-[50%_18%]"
+                            />
+                            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[rgba(21,20,26,0.94)] to-transparent p-4">
+                                <p className="text-sm font-semibold text-[var(--text-primary)]">{profile.name}</p>
+                                <p className="mt-1 font-mono text-xs text-[var(--accent-strong)]">{profile.location}</p>
+                            </div>
+                        </div>
+
+                        <div className="p-5 md:p-6">
+                            <p className="technical-label">Profile Summary</p>
+                            <p className="copy-readable mt-4 text-base leading-8 text-[var(--text-secondary)]">{aboutSummary}</p>
+                            {aboutInterest ? (
+                                <p className="copy-readable mt-4 text-sm leading-7 text-[var(--text-muted)]">{aboutInterest}</p>
+                            ) : null}
+                        </div>
+                    </div>
 
                     <Divider className="my-5" />
 
-                    <div className="grid gap-4 md:grid-cols-3">
+                    <div className="grid gap-4 px-5 md:grid-cols-3 md:px-6">
                         {about.stats.map((stat) => (
                             <div key={stat.label}>
                                 <p className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">{stat.value}</p>
@@ -431,7 +449,7 @@ export function AboutPreview() {
 
                     <Divider className="my-5" />
 
-                    <div>
+                    <div className="px-5 pb-5 md:px-6 md:pb-6">
                         <p className="technical-label">Engineering Interests</p>
                         <div className="mt-3 grid gap-3 md:grid-cols-2">
                             {about.engineeringFocus.map((item) => (
@@ -444,6 +462,11 @@ export function AboutPreview() {
                                 </div>
                             ))}
                         </div>
+                        {aboutApproach ? (
+                            <p className="mt-4 rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] p-4 text-sm leading-7 text-[var(--text-muted)]">
+                                {aboutApproach}
+                            </p>
+                        ) : null}
                     </div>
                 </Panel>
 
@@ -502,7 +525,7 @@ export function SecondaryProjectsPreview() {
             id="secondary-projects"
             eyebrow="06 / Additional Builds"
             title="Supporting backend breadth"
-            description="These projects add range without competing with the flagship case studies. The emphasis stays on auth, workflow handling, and backend orchestration."
+            description="Additional builds that show range across auth, workflow handling, and backend orchestration."
         >
             <div className="grid gap-4 lg:grid-cols-2">
                 {secondaryProjects.map((project) => (
@@ -569,7 +592,7 @@ export function ContactPreview() {
             id="contact"
             eyebrow="08 / Contact"
             title="Professional availability"
-            description="The closing section stays operational: current role interest, core backend focus, and direct paths for hiring conversations."
+            description="Current role interest, core backend focus, and direct hiring paths."
             className="pb-20 md:pb-24"
         >
             <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(320px,0.8fr)]">

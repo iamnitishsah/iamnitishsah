@@ -20,7 +20,7 @@ export function Panel({ children, className = "" }) {
 
 export function Badge({ children, tone = "default", className = "" }) {
     const tones = {
-        default: "border-[var(--border-medium)] bg-white/[0.035] text-[var(--text-secondary)]",
+        default: "border-[var(--border-medium)] bg-[rgba(255,248,237,0.045)] text-[var(--text-secondary)]",
         accent: "border-[var(--accent-border)] bg-[var(--accent-soft)] text-[var(--accent-strong)]",
         success: "border-emerald-400/20 bg-emerald-400/10 text-emerald-200",
     };
@@ -36,7 +36,7 @@ export function Badge({ children, tone = "default", className = "" }) {
 
 export function Pill({ children, className = "" }) {
     return (
-        <span className={`inline-flex min-h-8 max-w-full items-center rounded-full border border-[var(--border-subtle)] bg-white/[0.03] px-3 py-1.5 text-left text-sm leading-snug text-[var(--text-secondary)] ${className}`}>
+        <span className={`inline-flex min-h-8 max-w-full items-center rounded-full border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.04)] px-3 py-1.5 text-left text-sm leading-snug text-[var(--text-secondary)] ${className}`}>
             {children}
         </span>
     );
@@ -44,9 +44,9 @@ export function Pill({ children, className = "" }) {
 
 export function Metric({ label, value, detail, className = "" }) {
     return (
-        <div className={`rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,255,255,0.025)] p-4 ${className}`}>
+        <div className={`rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.04)] p-4 ${className}`}>
             <div className="font-mono text-[0.72rem] font-semibold uppercase text-[var(--text-muted)]">{label}</div>
-            <div className="mt-2 text-xl font-semibold tracking-tight text-[var(--text-primary)]">{value}</div>
+            <div className="mt-2 text-xl font-semibold tracking-tight text-[var(--accent-strong)]">{value}</div>
             {detail ? <div className="mt-1 text-sm leading-6 text-[var(--text-muted)]">{detail}</div> : null}
         </div>
     );

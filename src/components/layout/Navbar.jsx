@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { profile } from "../../data/profile";
 import useActiveSection from "../../hooks/useActiveSection";
+import profilePhoto from "../../assets/images/Official.jpeg";
 
 const links = [
     { name: "Experience", href: "#experience" },
@@ -18,16 +19,19 @@ export default function Navbar() {
     const activeSection = useActiveSection(observedSections);
 
     return (
-        <nav className="fixed left-0 top-0 z-50 w-full border-b border-[var(--border-subtle)] bg-[rgba(10,10,11,0.78)] shadow-[0_8px_32px_rgba(0,0,0,0.18)] backdrop-blur-xl">
+        <nav className="fixed left-0 top-0 z-50 w-full border-b border-[var(--border-subtle)] bg-[rgba(21,20,26,0.78)] shadow-[0_8px_32px_rgba(0,0,0,0.16)] backdrop-blur-xl">
             <div className="container-shell flex h-16 items-center justify-between">
                 <a
                     href="#home"
                     className="group inline-flex items-center gap-3 font-mono text-sm font-semibold text-[var(--text-primary)] transition-opacity duration-200 hover:opacity-100"
                     aria-label={`${profile.name} home`}
                 >
-                    <span className="grid h-7 w-7 place-items-center rounded-[var(--radius-sm)] border border-[var(--border-medium)] bg-white/[0.035] text-[var(--accent-strong)]">
-                        NS
-                    </span>
+                    <img
+                        src={profilePhoto}
+                        alt=""
+                        aria-hidden="true"
+                        className="h-8 w-8 rounded-full border border-[var(--accent-border)] object-cover object-[50%_18%]"
+                    />
                     <span className="hidden sm:inline">{profile.name}</span>
                 </a>
 
