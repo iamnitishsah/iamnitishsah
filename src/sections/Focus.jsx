@@ -6,7 +6,7 @@ export function Focus() {
     return (
         <SectionBand
             id="focus"
-            eyebrow="04 / Focus"
+            eyebrow="Focusd on"
             title="Engineering direction"
             description="Backend problem spaces that shape implementation choices and architectural tradeoffs."
         >
@@ -23,7 +23,6 @@ export function Focus() {
                                     {profile.subtitle}
                                 </p>
                             </div>
-                            <SignalRow items={profile.speciality.slice(0, 4).map((item) => item.toUpperCase())} />
                         </div>
                     </div>
 
