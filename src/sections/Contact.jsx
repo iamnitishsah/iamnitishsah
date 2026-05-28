@@ -6,7 +6,7 @@ export function Contact() {
     return (
         <SectionBand
             id="contact"
-            eyebrow="08 / Contact"
+            eyebrow="Contact Me"
             title="Professional availability"
             description="Current role interest, core backend focus, and direct hiring paths."
             className="pb-20 md:pb-24"
