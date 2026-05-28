@@ -1,63 +1,79 @@
 import { useState } from "react";
+import { profile } from "../../data/profile";
+import useActiveSection from "../../hooks/useActiveSection";
+
+const links = [
+    { name: "Experience", href: "#experience" },
+    { name: "Projects", href: "#projects" },
+    { name: "Focus", href: "#focus" },
+    { name: "Skills", href: "#skills" },
+    { name: "About", href: "#about" },
+    { name: "Contact", href: "#contact" },
+];
+
+const observedSections = ["home", ...links.map((link) => link.href.slice(1))];
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
-
-    const links = [
-        { name: "Home", href: "#home" },
-        { name: "About", href: "#about" },
-        { name: "Experience", href: "#experience" },
-        { name: "Projects", href: "#projects" },
-        { name: "Skills", href: "#skills" },
-        { name: "Contact", href: "#contact" },
-    ];
+    const activeSection = useActiveSection(observedSections);
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800/50">
-            <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-                {/* LOGO */}
+        <nav className="fixed left-0 top-0 z-50 w-full border-b border-[var(--border-subtle)] bg-[rgba(10,10,11,0.78)] shadow-[0_8px_32px_rgba(0,0,0,0.18)] backdrop-blur-xl">
+            <div className="container-shell flex h-16 items-center justify-between">
                 <a
                     href="#home"
-                    className="text-xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent"
+                    className="group inline-flex items-center gap-3 font-mono text-sm font-semibold text-[var(--text-primary)] transition-opacity duration-200 hover:opacity-100"
+                    aria-label={`${profile.name} home`}
                 >
-                    Nitish Sah
+                    <span className="grid h-7 w-7 place-items-center rounded-[var(--radius-sm)] border border-[var(--border-medium)] bg-white/[0.035] text-[var(--accent-strong)]">
+                        NS
+                    </span>
+                    <span className="hidden sm:inline">{profile.name}</span>
                 </a>
 
-                {/* DESKTOP LINKS */}
-                <ul className="hidden md:flex gap-8 text-slate-300 font-medium">
+                <ul className="hidden items-center gap-1 md:flex" aria-label="Primary navigation">
                     {links.map((link) => (
                         <li key={link.name}>
                             <a
                                 href={link.href}
-                                className="hover:text-emerald-400 transition-colors relative group"
+                                aria-current={activeSection === link.href.slice(1) ? "page" : undefined}
+                                className={`rounded-[var(--radius-sm)] px-3 py-2 text-sm font-medium transition-all duration-200 ${
+                                    activeSection === link.href.slice(1)
+                                        ? "bg-white/[0.06] text-[var(--text-primary)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
+                                        : "text-[var(--text-muted)] hover:bg-white/[0.035] hover:text-[var(--text-primary)]"
+                                }`}
                             >
                                 {link.name}
-                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-400 to-teal-400 group-hover:w-full transition-all duration-300"></span>
                             </a>
                         </li>
                     ))}
                 </ul>
 
-                {/* MOBILE BUTTON */}
                 <button
                     onClick={() => setOpen(!open)}
-                    className="md:hidden text-white text-2xl"
-                    aria-label="Toggle menu"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white/[0.035] text-[var(--text-primary)] transition-colors duration-200 hover:border-[var(--accent-border)] hover:bg-white/[0.05] md:hidden"
+                    aria-label="Toggle navigation menu"
+                    aria-expanded={open}
+                    aria-controls="mobile-navigation"
                 >
-                    {open ? '✕' : '☰'}
+                    <span className="font-mono text-sm">{open ? "ESC" : "NAV"}</span>
                 </button>
             </div>
 
-            {/* MOBILE MENU */}
             {open && (
-                <div className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800/50">
-                    <ul className="flex flex-col items-center py-6 gap-6 text-slate-300">
+                <div id="mobile-navigation" className="border-t border-[var(--border-subtle)] bg-[var(--bg-raised)] md:hidden">
+                    <ul className="container-shell grid gap-1 py-4">
                         {links.map((link) => (
                             <li key={link.name}>
                                 <a
                                     href={link.href}
                                     onClick={() => setOpen(false)}
-                                    className="hover:text-emerald-400 transition-colors text-lg"
+                                    aria-current={activeSection === link.href.slice(1) ? "page" : undefined}
+                                    className={`block rounded-[var(--radius-md)] px-3 py-3 text-sm font-medium ${
+                                        activeSection === link.href.slice(1)
+                                            ? "bg-white/[0.06] text-[var(--text-primary)]"
+                                            : "text-[var(--text-secondary)] hover:bg-white/[0.035] hover:text-[var(--text-primary)]"
+                                    }`}
                                 >
                                     {link.name}
                                 </a>
