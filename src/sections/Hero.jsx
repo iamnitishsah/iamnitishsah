@@ -3,7 +3,7 @@ import { experiences } from "../data/experience";
 import { profile } from "../data/profile";
 import profilePhoto from "../assets/images/Official.jpeg";
 import Button from "../components/common/Button";
-import { Badge, Container, Divider, Metric, Pill, Section } from "../components/ui";
+import { Badge, Container, Metric, Pill, Section } from "../components/ui";
 
 export default function Hero() {
     const primaryExperience = experiences[0];
@@ -25,8 +25,8 @@ export default function Hero() {
 
     return (
         <Section id="home" className="min-h-screen overflow-hidden pb-14 pt-24 md:pb-20 md:pt-28">
-            <Container className="grid min-h-[calc(100vh-8rem)] items-center gap-10 lg:grid-cols-[minmax(0,1.02fr)_minmax(360px,0.98fr)] lg:gap-14 xl:gap-18">
-                <div className="animate-enter">
+            <Container className="grid min-h-[calc(100vh-8rem)] items-stretch gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(380px,0.92fr)] lg:gap-12 xl:gap-14">
+                <div className="animate-enter flex h-full flex-col justify-center">
                     <div className="flex flex-wrap items-center gap-3">
                         <Badge tone="success">
                             <span className="h-1.5 w-1.5 rounded-full bg-[var(--success)]" aria-hidden="true" />
@@ -67,15 +67,27 @@ export default function Hero() {
                             </Pill>
                         ))}
                     </div>
+
+                    <div className="mt-8 grid gap-3 sm:grid-cols-3">
+                        {focusCards.map((item) => (
+                            <div
+                                key={item.title}
+                                className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[rgba(255,248,237,0.035)] px-4 py-3"
+                            >
+                                <p className="technical-label">{item.title}</p>
+                                <p className="mt-2 text-sm leading-6 text-[var(--text-secondary)]">{item.description}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
-                <div className="animate-enter relative">
+                <div className="animate-enter relative flex h-full items-center">
                     <span className="hero-orbit -right-12 top-8 h-44 w-44" aria-hidden="true" />
                     <span className="hero-orbit -bottom-4 left-2 h-28 w-28" aria-hidden="true" />
 
-                    <div className="profile-frame relative z-10 overflow-hidden p-3">
+                    <div className="profile-frame relative z-10 w-full overflow-hidden p-3">
                         <div className="grid gap-3">
-                            <div className="relative min-h-[430px] overflow-hidden rounded-[18px] bg-[var(--bg-raised)] sm:min-h-[390px] lg:min-h-[520px] xl:min-h-[440px]">
+                            <div className="relative min-h-[360px] overflow-hidden rounded-[18px] bg-[var(--bg-raised)] sm:min-h-[390px] lg:min-h-[420px] xl:min-h-[440px]">
                                 <img
                                     src={profilePhoto}
                                     alt={profile.name}
@@ -119,19 +131,6 @@ export default function Hero() {
                             <Metric label="Role Tracks" value={String(profile.roles.length)} detail="targeted positions" />
                         </div>
 
-                        <Divider className="my-3" />
-
-                        <div className="grid gap-3">
-                            {focusCards.map((item) => (
-                                <div
-                                    key={item.title}
-                                    className="grid gap-2 rounded-[var(--radius-md)] bg-[rgba(255,248,237,0.035)] px-4 py-3 sm:grid-cols-[minmax(0,0.36fr)_minmax(0,1fr)]"
-                                >
-                                    <p className="technical-label">{item.title}</p>
-                                    <p className="text-sm leading-6 text-[var(--text-secondary)]">{item.description}</p>
-                                </div>
-                            ))}
-                        </div>
                     </div>
                 </div>
             </Container>

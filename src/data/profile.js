@@ -4,7 +4,7 @@ export const profile = {
     name: "Nitish Kumar Sah",
 
     headline:
-        "Backend-focused Software Engineer building secure and workflow-driven systems",
+        "Backend-focused Software Engineer building secure and scalable systems",
 
     subtitle:
         "FastAPI • Authentication • Async Workflows • Backend Architecture",
