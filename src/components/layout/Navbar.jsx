@@ -4,11 +4,10 @@ import useActiveSection from "../../hooks/useActiveSection";
 import profilePhoto from "../../assets/images/Official.jpeg";
 
 const links = [
+    { name: "About", href: "#about" },
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
-    { name: "Focus", href: "#focus" },
     { name: "Skills", href: "#skills" },
-    { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
 ];
 
