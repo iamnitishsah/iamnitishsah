@@ -1,106 +1,192 @@
-# Hi 👋, I'm Nitish Kumar Sah
+# Hi, I'm Nitish 👋
 
-### Backend Engineer • FastAPI Specialist • Competitive Programmer
+### B.Tech @ NIT Rourkela | Backend Developer | Competitive Programmer
 
-B.Tech student at **NIT Rourkela** passionate about building scalable backend systems, distributed services, and AI-powered applications.
-
-I enjoy designing reliable APIs, optimizing system performance, and solving complex engineering problems with clean architecture.
+<p align="left">
+  <a href="YOUR_GITHUB_URL">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  <a href="YOUR_LINKEDIN_URL">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="YOUR_CODEFORCES_URL">
+    <img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white"/>
+  </a>
+  <a href="YOUR_CODECHEF_URL">
+    <img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/>
+  </a>
+</p>
 
 ---
 
-# 🚀 About Me
+## 👨‍💻 About Me
 
-* 🎓 B.Tech at **National Institute of Technology, Rourkela**
-* 💻 Backend-focused developer specializing in:
+I'm **Nitish**, a 4th-year **B.Tech student at National Institute of Technology, Rourkela**, passionate about **software engineering, backend development, and problem solving**.
 
-    * FastAPI
-    * Django REST Framework
-    * PostgreSQL
-    * MongoDB
-    * Redis
-    * Celery
-    * Docker
-* ⚡ Interested in:
+I enjoy building backend systems, understanding how systems work internally, and solving algorithmic problems through competitive programming.
 
-    * Backend Architecture
-    * Distributed Systems
-    * API Design
-    * Performance Optimization
-    * AI-integrated Applications
+* 🎓 **B.Tech — NIT Rourkela**
+* 💻 Interested in **Backend Engineering & Software Development**
+* ⚙️ Backend developer with experience in **Python & Go**
 * 🧠 Competitive Programmer
-
-    * CodeChef 3⭐ (1600+)
-    * Codeforces Pupil
+* 🏆 National-level Hackathon Winner
+* 🚀 Preparing for **Software Engineering / Backend Engineering roles**
+* 📚 Constantly learning about **Distributed Systems, Databases & System Design**
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 ### Languages
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge\&logo=cplusplus\&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge\&logo=go\&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge\&logo=postgresql\&logoColor=white)
+<p>
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white"/>
+</p>
 
-### Backend & Frameworks
+### Backend
 
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)
-![Django REST Framework](https://img.shields.io/badge/DRF-092E20?style=for-the-badge\&logo=django\&logoColor=white)
-![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge\&logo=pydantic\&logoColor=white)
+<p>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Django_REST_Framework-A30000?style=flat-square&logo=django&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white"/>
+</p>
 
 ### Databases & Infrastructure
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge\&logo=postgresql\&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge\&logo=mongodb\&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-D82C20?style=for-the-badge\&logo=redis\&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
+<p>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white"/>
+</p>
 
-### Tools & DevOps
+### Tools
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge\&logo=celery\&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge\&logo=amazonaws\&logoColor=white)
-
----
-
-# 💼 Experience
-
-## Software Engineer Intern — Saptang Labs
-
-**Dec 2025 – Apr 2026**
-
-* Developed 50+ secure REST APIs using FastAPI with RBAC, JWT authentication, audit logging, and input validation.
-* Designed and implemented MFA authentication using Email OTP + TOTP.
-* Built asynchronous email processing pipelines using Redis + Celery workers.
-* Optimized database-heavy APIs with pagination and query improvements, reducing response latency significantly.
-* Worked on Dockerized backend deployment workflows.
+<p>
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white"/>
+</p>
 
 ---
 
-# 🏆 Achievements
+## 🧠 Areas of Interest
 
-* 🥈 Runners-Up — **Ethos 2025, IIT Guwahati**
-* 🥈 2nd Runners-Up — **Hackfest'25, IIT-ISM Dhanbad**
-* ⭐ CodeChef 3-Star Programmer (1600+)
-* 🧠 Codeforces Pupil
-
----
-
-# 📫 Connect With Me
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge\&logo=vercel\&logoColor=white)](https://iamnitishsah.vercel.app/)
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://linkedin.com/in/iamnitishsah)
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/iamnitishsah)
-
-[![Mail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:iamnitishsah12@gmail.com)
+* **Backend Engineering**
+* **Distributed Systems**
+* **System Design**
+* **Database Systems**
+* **REST API Design**
+* **Caching & Asynchronous Processing**
+* **Concurrency**
+* **Data Structures & Algorithms**
+* **Competitive Programming**
+* **Software Architecture**
 
 ---
 
-# 📈 GitHub Stats
+## ⚡ Competitive Programming
+
+I actively practice competitive programming to improve my algorithmic thinking and problem-solving skills.
+
+| Platform          |    Rating |
+| ----------------- | --------: |
+| 🟦 **Codeforces** | **1000+** |
+| 🟫 **CodeChef**   | **1500+** |
+
+### Strong Areas
+
+`DSA` `Dynamic Programming` `Graphs` `Greedy` `Binary Search` `Bit Manipulation` `STL` `Number Theory`
+
+**Primary CP Language:** C++
+
+---
+
+## 🏆 Achievements
+
+* 🥇 **Hackathon Winner — IIT Guwahati**
+* 🥇 **Hackathon Winner — IIT (ISM) Dhanbad**
+* 🎓 **B.Tech Student — NIT Rourkela**
+* 💻 **1000+ Codeforces Rating**
+* 💻 **1500+ CodeChef Rating**
+
+---
+
+## 📊 GitHub Stats
+
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=iamnitishsah&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true" height="180"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true" height="180"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true"/>
+</p>
+
+---
+
+## 📈 Contribution Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=tokyo-night&hide_border=true" width="100%"/>
+</p>
+
+---
+
+## 🎯 Currently
+
+```text
+B.Tech @ NIT Rourkela
+        │
+        ├── Backend Engineering
+        │     ├── Python
+        │     └── Go
+        │
+        ├── Databases
+        │     ├── MySQL
+        │     └── MongoDB
+        │
+        ├── Systems
+        │     ├── Redis
+        │     ├── Distributed Systems
+        │     └── System Design
+        │
+        └── Competitive Programming
+              ├── Codeforces/CodeChef
+              └── Leetcode
+```
+
+---
+
+## 📫 Connect With Me
+
+<p align="center">
+
+<a href="YOUR_LINKEDIN_URL">
+<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="YOUR_EMAIL">
+<img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<a href="YOUR_CODEFORCES_URL">
+<img src="https://img.shields.io/badge/Codeforces-Profile-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white"/>
+</a>
+
+<a href="YOUR_CODECHEF_URL">
+<img src="https://img.shields.io/badge/CodeChef-Profile-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/>
+</a>
+
+</p>
+
+---
+
+<p align="center">
+  <i>Building, solving, and learning — one system at a time.</i>
 </p>
