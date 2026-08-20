@@ -125,6 +125,13 @@ I actively practice competitive programming to improve my algorithmic thinking a
   />
 </p>
 
+<p align="center">
+  <img 
+    src="https://streak-stats.demolab.com?user=iamnitishsah&theme=tokyonight&hide_border=true"
+    height="180"
+  />
+</p>
+
 ## 📈 Contribution Graph
 
 <p align="center">
