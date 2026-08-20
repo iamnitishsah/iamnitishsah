@@ -115,12 +115,12 @@ I actively practice competitive programming to improve my algorithmic thinking a
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true" height="180"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true" height="180"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=iamnitishsah&show_icons=true&theme=tokyonight&hide_border=true" height="180"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamnitishsah&layout=compact&theme=tokyonight&hide_border=true" height="180"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=iamnitishsah&theme=tokyonight&hide_border=true"/>
 </p>
 
 ---
@@ -128,7 +128,7 @@ I actively practice competitive programming to improve my algorithmic thinking a
 ## 📈 Contribution Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=tokyo-night&hide_border=true" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=iamnitishsah&theme=tokyo-night&hide_border=true" width="100%"/>
 </p>
 
 ---
@@ -162,22 +162,13 @@ B.Tech @ NIT Rourkela
 
 <p align="center">
 
-<a href="YOUR_LINKEDIN_URL">
+<a href="https://www.linkedin.com/in/iamnitishsah/">
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
-<a href="YOUR_EMAIL">
+<a href="iamnitishsah30@gmail.com">
 <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
-
-<a href="YOUR_CODEFORCES_URL">
-<img src="https://img.shields.io/badge/Codeforces-Profile-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white"/>
-</a>
-
-<a href="YOUR_CODECHEF_URL">
-<img src="https://img.shields.io/badge/CodeChef-Profile-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/>
-</a>
-
 </p>
 
 ---
