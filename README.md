@@ -100,9 +100,6 @@ I actively practice competitive programming to improve my algorithmic thinking a
 | 🟦 **Codeforces** | **1400+** |
 | 🟫 **CodeChef**   | **1600+** |
 
-### Strong Areas
-
-`DSA` `Dynamic Programming` `Graphs` `Greedy` `Binary Search` `Bit Manipulation` `STL` `Number Theory`
 
 **Primary CP Language:** C++
 
@@ -112,9 +109,6 @@ I actively practice competitive programming to improve my algorithmic thinking a
 
 * 🥇 **Hackathon Winner — IIT Guwahati**
 * 🥇 **Hackathon Winner — IIT (ISM) Dhanbad**
-* 🎓 **B.Tech Student — NIT Rourkela**
-* 💻 **1000+ Codeforces Rating**
-* 💻 **1500+ CodeChef Rating**
 
 ---
 
