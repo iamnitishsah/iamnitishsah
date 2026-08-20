@@ -97,8 +97,8 @@ I actively practice competitive programming to improve my algorithmic thinking a
 
 | Platform          |    Rating |
 | ----------------- | --------: |
-| 🟦 **Codeforces** | **1000+** |
-| 🟫 **CodeChef**   | **1500+** |
+| 🟦 **Codeforces** | **1400+** |
+| 🟫 **CodeChef**   | **1600+** |
 
 ### Strong Areas
 
