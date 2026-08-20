@@ -3,16 +3,16 @@
 ### B.Tech @ NIT Rourkela | Backend Developer | Competitive Programmer
 
 <p align="left">
-  <a href="YOUR_GITHUB_URL">
+  <a href="https://github.com/iamnitishsah">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
-  <a href="YOUR_LINKEDIN_URL">
+  <a href="https://www.linkedin.com/in/iamnitishsah/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
-  <a href="YOUR_CODEFORCES_URL">
+  <a href="https://codeforces.com/profile/nitiSHadow">
     <img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white"/>
   </a>
-  <a href="YOUR_CODECHEF_URL">
+  <a href="https://www.codechef.com/users/nitishadow">
     <img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/>
   </a>
 </p>
