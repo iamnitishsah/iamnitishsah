@@ -1,145 +1,93 @@
-# Hi, I'm Nitish 👋
+<!-- Animated header -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Nitish%20Kumar%20Sah&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=I%20make%20backends%20fast%2C%20secure%20%26%20boringly%20reliable&descSize=18&descAlignY=60&animation=fadeIn" width="100%"/>
+</p>
 
-### B.Tech @ NIT Rourkela | Backend Developer | Competitive Programmer
-
-<p align="left">
+<!-- Typing animation -->
+<p align="center">
   <a href="https://github.com/iamnitishsah">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=Backend+Engineer+%F0%9F%9B%A0%EF%B8%8F;Competitive+Programmer+%E2%9A%94%EF%B8%8F;Hackathon+Podium+Regular+%F0%9F%8F%86;Turning+coffee+into+REST+APIs+%E2%98%95;Currently+open+to+SDE+roles+%F0%9F%9A%80" alt="Typing SVG" />
   </a>
-  <a href="https://www.linkedin.com/in/iamnitishsah/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="https://codeforces.com/profile/nitiSHadow">
-    <img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white"/>
-  </a>
-  <a href="https://www.codechef.com/users/nitishadow">
-    <img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/>
-  </a>
-</p>
-
----
-
-## 👨‍💻 About Me
-
-I'm **Nitish**, a 4th-year **B.Tech student at National Institute of Technology, Rourkela**, passionate about **software engineering, backend development, and problem solving**.
-
-I enjoy building backend systems, understanding how systems work internally, and solving algorithmic problems through competitive programming.
-
-* 🎓 **B.Tech — NIT Rourkela**
-* 💻 Interested in **Backend Engineering & Software Development**
-* ⚙️ Backend developer with experience in **Python & Go**
-* 🧠 Competitive Programmer
-* 🏆 National-level Hackathon Winner
-* 🚀 Preparing for **Software Engineering / Backend Engineering roles**
-* 📚 Constantly learning about **Distributed Systems, Databases & System Design**
-
----
-
-## 🛠️ Tech Stack
-
-### Languages
-
-<p>
-  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white"/>
-</p>
-
-### Backend
-
-<p>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Django_REST_Framework-A30000?style=flat-square&logo=django&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white"/>
-</p>
-
-### Databases & Infrastructure
-
-<p>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white"/>
-</p>
-
-### Tools
-
-<p>
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white"/>
-</p>
-
----
-
-## 🧠 Areas of Interest
-
-* **Backend Engineering**
-* **Distributed Systems**
-* **System Design**
-* **Database Systems**
-* **REST API Design**
-* **Caching & Asynchronous Processing**
-* **Concurrency**
-* **Data Structures & Algorithms**
-* **Competitive Programming**
-* **Software Architecture**
-
----
-
-## ⚡ Competitive Programming
-
-I actively practice competitive programming to improve my algorithmic thinking and problem-solving skills.
-
-| Platform          |    Rating |
-| ----------------- | --------: |
-| 🟦 **Codeforces** | **1400+** |
-| 🟫 **CodeChef**   | **1600+** |
-
-
-**Primary CP Language:** C++
-
----
-
-## 🏆 Achievements
-
-* 🥇 **Hackathon Winner — IIT Guwahati**
-* 🥇 **Hackathon Winner — IIT (ISM) Dhanbad**
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=iamnitishsah&theme=tokyonight"
-    width="100%"
-  />
 </p>
 
 <p align="center">
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=iamnitishsah&theme=tokyonight"
-    height="180"
-  />
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=iamnitishsah&theme=tokyonight"
-    height="180"
-  />
+  <a href="https://www.linkedin.com/in/iamnitishsah/"><img src="https://img.shields.io/badge/LinkedIn-Let's%20Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="mailto:iamnitishsah30@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20Hi-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://codeforces.com/profile/nitiSHadow"><img src="https://img.shields.io/badge/Codeforces-Specialist-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white"/></a>
+  <a href="https://www.codechef.com/users/nitishadow"><img src="https://img.shields.io/badge/CodeChef-3%E2%98%85-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/></a>
+</p>
+
+---
+
+## 👋 `whoami`
+
+```python
+class Nitish:
+    def __init__(self):
+        self.role       = "Final-year B.Tech @ NIT Rourkela"
+        self.superpower = "Making slow APIs fast and fragile systems sturdy"
+        self.fuel       = ["Coffee", "Edge cases", "Accepted verdicts ✅"]
+        self.off_duty   = "Treasurer of a Dramatics Club (yes, really 🎭)"
+        self.status     = "Looking for my next SDE / Backend role"
+
+    def say_hello(self):
+        return "Open a PR, send a DM, or challenge me to a Codeforces round."
+```
+
+> 🎭 Fun fact: I can explain a Redis cache miss *and* act it out in silence. Mime + Backend = rare combo.
+
+---
+
+## ⚡ What I'm Into
+
+| 🔧 Building | 🧠 Obsessing Over | 🎯 Chasing |
+| :--- | :--- | :--- |
+| REST APIs that don't fall over | Caching & async pipelines | Distributed Systems |
+| Auth, RBAC & secure workflows | Database indexing & query tuning | System Design |
+| Background workers & queues | Concurrency | Clean, testable code |
+
+---
+
+## 🛠️ Arsenal
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=py,cpp,go,django,fastapi,mysql,mongodb,redis,docker,aws,git,github,linux,postman,react,nextjs&perline=8" />
 </p>
 
 <p align="center">
-  <img
-    src="https://streak-stats.demolab.com?user=iamnitishsah&theme=tokyonight&hide_border=true"
-    height="180"
-  />
+  <sub>Plus: Celery · Pydantic · JWT · LangChain · LangGraph · GitHub Actions · pytest</sub>
 </p>
 
-## 📈 Contribution Graph
+---
+
+## ⚔️ Competitive Programming
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Codeforces-1400%2B%20Specialist-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CodeChef-1600%2B%20%7C%203%E2%98%85-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Weapon%20of%20Choice-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
+</p>
+
+---
+
+## 🏆 Trophy Shelf
+
+- 🥈 **Runners-Up**, Ethos 2025 — national hackathon by Coding Club, IIT Guwahati *(led the team)*
+- 🥉 **2nd Runners-Up**, Hackfest'25 — IIT (ISM) Dhanbad
+- 🎓 **Advanced Learning Algorithms** — DeepLearning.AI
+
+---
+
+## 📊 Stats (a.k.a. proof I actually ship)
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=iamnitishsah&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamnitishsah&layout=compact&theme=tokyonight&hide_border=true" height="170"/>
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=iamnitishsah&theme=tokyonight&hide_border=true" height="170"/>
+</p>
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=iamnitishsah&theme=tokyo-night&hide_border=true" width="100%"/>
@@ -147,46 +95,19 @@ I actively practice competitive programming to improve my algorithmic thinking a
 
 ---
 
-## 🎯 Currently
+## 📫 Let's Talk
 
-```text
-B.Tech @ NIT Rourkela
-        │
-        ├── Backend Engineering
-        │     ├── Python
-        │     └── Go
-        │
-        ├── Databases
-        │     ├── MySQL
-        │     └── MongoDB
-        │
-        ├── Systems
-        │     ├── Redis
-        │     ├── Distributed Systems
-        │     └── System Design
-        │
-        └── Competitive Programming
-              ├── Codeforces/CodeChef
-              └── Leetcode
-```
-
----
-
-## 📫 Connect With Me
+Got a backend problem, a hiring pipeline, or a tricky DP question? I'm all ears.
 
 <p align="center">
-
-<a href="https://www.linkedin.com/in/iamnitishsah/">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-
-<a href="iamnitishsah30@gmail.com">
-<img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
+  <a href="https://www.linkedin.com/in/iamnitishsah/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="mailto:iamnitishsah30@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 </p>
-
----
 
 <p align="center">
   <i>Building, solving, and learning — one system at a time.</i>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,100:0f2027&height=120&section=footer" width="100%"/>
 </p>
