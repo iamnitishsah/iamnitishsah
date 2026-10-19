@@ -1,6 +1,6 @@
 <!-- Animated header -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Nitish%20Kumar%20Sah&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=I%20make%20backends%20fast%2C%20secure%20%26%20boringly%20reliable&descSize=18&descAlignY=60&animation=fadeIn" width="100%"/>
+  <img src="./assets/header.svg" width="100%" alt="Nitish Kumar Sah"/>
 </p>
 
 <!-- Typing animation -->
@@ -15,6 +15,11 @@
   <a href="mailto:iamnitishsah30@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20Hi-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://codeforces.com/profile/nitiSHadow"><img src="https://img.shields.io/badge/Codeforces-Specialist-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white"/></a>
   <a href="https://www.codechef.com/users/nitishadow"><img src="https://img.shields.io/badge/CodeChef-3%E2%98%85-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/></a>
+</p>
+
+<p align="center">
+  <i>Athlete by day, programmer by night;<br/>
+  Curious by heart, with a philosopher's sight.</i>
 </p>
 
 ---
@@ -90,7 +95,7 @@ class Nitish:
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=iamnitishsah&theme=tokyo-night&hide_border=true" width="100%"/>
+  <img src="https://ghchart.rshah.org/36bcf7/iamnitishsah" width="100%" alt="Contribution chart"/>
 </p>
 
 ---
