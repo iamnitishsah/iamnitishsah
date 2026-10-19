@@ -94,10 +94,6 @@ class Nitish:
   <img src="https://streak-stats.demolab.com?user=iamnitishsah&theme=tokyonight&hide_border=true" height="170"/>
 </p>
 
-<p align="center">
-  <img src="https://ghchart.rshah.org/36bcf7/iamnitishsah" width="100%" alt="Contribution chart"/>
-</p>
-
 ---
 
 ## 📫 Let's Talk
