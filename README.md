@@ -26,17 +26,32 @@
 
 ## 👋 `whoami`
 
-```python
-class Nitish:
-    def __init__(self):
-        self.role       = "Final-year B.Tech @ NIT Rourkela"
-        self.superpower = "Making slow APIs fast and fragile systems sturdy"
-        self.fuel       = ["Coffee", "Edge cases", "Accepted verdicts ✅"]
-        self.off_duty   = "Treasurer of a Dramatics Club (yes, really 🎭)"
-        self.status     = "Looking for my next SDE / Backend role"
-
-    def say_hello(self):
-        return "Open a PR, send a DM, or challenge me to a Codeforces round."
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+ 
+class Nitish {
+public:
+    string college    = "NIT Rourkela (B.Tech, final year)";
+    string dayShift   = "Athlete 🏃";
+    string nightShift = "Programmer 💻";
+    string superpower = "Making slow APIs fast and fragile systems sturdy";
+    string offDuty    = "Treasurer of a Dramatics Club (yes, really 🎭)";
+    vector<string> fuel = {"Coffee", "Edge cases", "Accepted verdicts ✅"};
+    string status     = "Open to SDE / Backend roles";
+ 
+    string sayHello() const {
+        return "Send a DM, open a PR, or challenge me to a Codeforces round.";
+    }
+ 
+    ~Nitish() { /* no memory leaks, no TLEs, no regrets */ }
+};
+ 
+int main() {
+    Nitish me;
+    cout << me.sayHello() << endl;
+    return 0;  // exit code 0, as always
+}
 ```
 
 > 🎭 Fun fact: I can explain a Redis cache miss *and* act it out in silence. Mime + Backend = rare combo.
