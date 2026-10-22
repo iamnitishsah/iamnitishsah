@@ -10,7 +10,7 @@ export const profile = {
   last: "Kumar Sah",
   role: "Backend engineer",
   tagline:
-    "I build secure APIs, async pipelines and the caches in between — and I think in graphs.",
+    "I build secure APIs, async pipelines and the caches in between. And I like graphs.",
   meta: ["B.Tech, NIT Rourkela ’27", "SWE intern @ Saptang Labs"],
   status: "Open to SDE & backend roles",
   email: "iamnitishsah30@gmail.com",

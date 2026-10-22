@@ -373,24 +373,27 @@ b {
   opacity: 0;
   transform: translateX(-4px);
   transition: opacity 0.25s, transform 0.25s var(--ease), color 0.2s;
-  background: rgba(11, 13, 19, 0.8);
-  padding: 2px 6px;
-  border-radius: 4px;
+  background: rgba(11, 13, 19, 0.92);
+  border: 1px solid var(--wire);
+  padding: 3px 8px;
+  border-radius: 6px;
+  pointer-events: none;
 }
 .spine__idx {
   color: var(--wire-2);
 }
+/* labels stay hidden until you hover the rail, so they never sit on top of page content */
 .spine__v.cur .spine__label {
-  opacity: 1;
-  transform: none;
   color: var(--frontier);
 }
 .spine__v.cur .spine__idx {
   color: var(--frontier);
 }
-.spine:hover .spine__label {
+.spine:hover .spine__label,
+.spine:focus-within .spine__label {
   opacity: 1;
   transform: none;
+  pointer-events: auto;
 }
 .spine__v a:hover .spine__label {
   color: var(--chalk);
@@ -630,8 +633,10 @@ b {
 }
 
 @media (min-width: 1100px) {
+  /* pushed clear of the left rail; width grows by the same amount so the name doesn't wrap more */
   .hero__text {
-    padding-left: max(var(--gutter), 96px);
+    width: min(calc(46vw + 90px), 730px);
+    padding-left: clamp(150px, 10vw, 200px);
   }
 }
 
