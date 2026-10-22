@@ -107,7 +107,7 @@ export default async function Home() {
               <span>{profile.first}</span>
               <span>{profile.last}</span>
             </h1>
-            <p className="hero__role">{profile.role} · competitive programmer</p>
+            <p className="hero__role">{profile.role} · Competitive Programmer</p>
             <p className="hero__tag">{profile.tagline}</p>
             <ul className="hero__meta">
               {profile.meta.map((m) => (

@@ -8,9 +8,10 @@ export const profile = {
   name: "Nitish Kumar Sah",
   first: "Nitish",
   last: "Kumar Sah",
-  role: "Backend engineer",
+  role: "Backend Engineer",
+  // one string; each \n becomes a line break on the page
   tagline:
-    "I build secure APIs, async pipelines and the caches in between. And I like graphs.",
+  "Athlete by day, Engineer by night;\nBuilding backends that hold, when the traffic gets tight.",
   meta: ["B.Tech, NIT Rourkela ’27", "SWE intern @ Saptang Labs"],
   status: "Open to SDE & backend roles",
   email: "iamnitishsah30@gmail.com",
