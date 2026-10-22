@@ -1,6 +1,6 @@
 <!-- Animated header -->
 <p align="center">
-  <img src="src/assets/header.svg" width="100%" alt="Nitish Kumar Sah"/>
+  <img src="assets/header.svg" width="100%" alt="Nitish Kumar Sah"/>
 </p>
 
 <!-- Typing animation -->
